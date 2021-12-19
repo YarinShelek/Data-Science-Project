@@ -3,24 +3,30 @@
     <title>{{Title}}</title>
     {% endblock %}
 </head>
-<body style="background-color: #1e667f;">
+<body style="background-color: #000a54;">
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffbc9f;">
-    <a class="navbar-brand" href="">Home</a>
+    <a class="navbar-brand" href="/">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Page1</a>
+                <a class="nav-link" href="/DataSource">Data Source</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Page2</a>
+                <a class="nav-link" href="/OriginalData">Original Data</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/EDA">EDA</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/MachineLearning">Machine Learning</a>
             </li>
         </ul>
     </div>
 </nav>
-<img src="/Logo" width="1000" height="300" style="position:absolute; bottom:0; left:750px">
+<img src="/Lolgo" width="1000" height="300" style="position:absolute; bottom:0; left:30%">
 {% block content %}
 {% endblock %}
 

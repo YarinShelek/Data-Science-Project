@@ -11,6 +11,13 @@ def HomePage(request: Request):
     return Consts.templates.TemplateResponse("HomePage.html", {"request": request, "Title": "Home Page"})
 
 
-@router.get("/Logo")
-def TinderLogo():
-    return FileResponse("Images/tinder_logo.png")
+@router.get("/Lolgo")
+def Lolgo():
+    return FileResponse("Images/lolgo.png")
+@router.get("/ChallengerLogo")
+def ChallengerLogo():
+    return FileResponse("Images/challenger.png")
+
+@router.get("/DiamondLogo")
+def DiamondLogo():
+    return FileResponse("Images/diamond.png")

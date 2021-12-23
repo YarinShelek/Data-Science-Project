@@ -85,10 +85,9 @@ try:
                     p+=1000
                 if p >= 10000 and p< 20000:
                     p += 2000
-                if p >= 20000 and p < 30000:
+                if p >= 20000:
                     p += 3000
-                if p >= 30000:
-                    p+=4500
+
             driver.get(url+f"&page={p}")
             i = -1
             time.sleep(6)

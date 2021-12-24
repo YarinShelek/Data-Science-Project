@@ -15,10 +15,11 @@ try:
         i += random.randint(1, 11) #increase players search number randomly (1-10)
         players_list = driver.find_elements(By.CLASS_NAME, "summoner") #get all players in page
         ads = driver.find_elements(By.ID, "desktop-anchor-close") #find ads
-        if len(ads)>0:
+        if len(ads) > 0:
             for k in range(len(ads)):
                 ads[k].click() #close ad
-        players_list[i].click() #enter player number i page
+        if i < len(players_list):
+            players_list[i].click() #enter player number i page
         time.sleep(5)
         players_stats = {} # stats dict
         #ranking

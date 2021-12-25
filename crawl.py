@@ -44,9 +44,9 @@ try:
             stats[1].click() #get to stats page
 
             #w/r
-            WinRate = driver.find_element(By.CLASS_NAME, "champion-rates") #w/r + games
+            WinRate = driver.find_elements(By.CLASS_NAME, "champion-rates") #w/r + games
             if WinRate:
-                win_rate = WinRate.text.split("/")[0].split("%")[0] #w/r
+                win_rate = WinRate[0].text.split("/")[0].split("%")[0] #w/r
                 win = WinRate.text.split("/")[1].split("W")[0] #wins
                 loss = WinRate.text.split("/")[1].split("W")[1].split("L")[0] #losses
                 games = int(win)+int(loss)

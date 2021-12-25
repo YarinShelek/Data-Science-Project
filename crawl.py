@@ -45,7 +45,8 @@ try:
 
             #w/r
             WinRate = driver.find_elements(By.CLASS_NAME, "champion-rates") #w/r + games
-            if WinRate:
+            if len(WinRate) > 0:
+                print(WinRate)
                 win_rate = WinRate[0].text.split("/")[0].split("%")[0] #w/r
                 win = WinRate.text.split("/")[1].split("W")[0] #wins
                 loss = WinRate.text.split("/")[1].split("W")[1].split("L")[0] #losses
@@ -113,7 +114,7 @@ try:
             time.sleep(8)
 
         stop = driver.find_elements(By.CLASS_NAME, "content-section leaderboard_table_error") #check for no-content error (means we are overflowing players pages, no content left)
-        if stop:
+        if stop != []:
             break
 
     driver.close()

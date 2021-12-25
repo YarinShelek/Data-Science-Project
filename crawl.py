@@ -9,7 +9,7 @@ try:
     url = "https://u.gg/leaderboards/ranking?region=euw1"
     driver.get(url)
     time.sleep(8) #wait for the page to load
-
+    data = 0
     page = 0
     curr_player = -1
 
@@ -84,6 +84,7 @@ try:
                     players_stats["Multi_Kill"] += int(driver.find_elements(By.CLASS_NAME, "multikill-cell")[kill+4].text)
 
             df = pd.DataFrame([players_stats])
+            data += 1
             with open("Data.csv", "a") as file:
                 df.to_csv(file, index=False, header=False)
 
@@ -106,7 +107,7 @@ try:
             now = datetime.now()
             current_time = now.strftime("%H:%M:%S")  # https://www.programiz.com/python-programming/datetime/current-time
 
-            print(f"going to page {page} at {current_time}")
+            print(f"going to page {page} at {current_time}, currently have {data*11} data")
             driver.get(url+f"&page={page}")
             curr_player = -1
             time.sleep(8)
@@ -120,4 +121,4 @@ try:
 except Exception as e:
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
-    print(f'crashed at page {page} at {current_time}')
+    print(f'crashed at page {page} at {current_time} with {data*11} data')

@@ -74403,3 +74403,196 @@ JavaScript warning: https://cdn.somplo.com/prod/test/251119/new-tag.min.js?cb=8,
 JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 6282 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 582 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 7002 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156657&predirect=https%3A%2F%2Faax-eu.amazon-adsystem.com%2Fs%2Fecm3%3Fid%3DPM_UID%26ex%3Dpubmatic.com&userIdMacro=PM_UID, line 1: ReferenceError: CommonMeta is not defined
+JavaScript error: https://ads.pubmatic.com/AdServer/js/user_1640469921641	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla1640469922261	Marionette	INFO	Stopped listening on port 60635
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel cconsole.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofilelyHues\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52382/devtools/browser/4061f633-afb8-44f5-a1bb-5e94be24d6ba
+1640469923971	Marionette	INFO	Listening on port 52394
+1640469924324	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.somplo.com/prod/test/251119/new-tag.min.js?cb=8, line 282: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/f8gou5y2Dfq0zn72-W9hYw99gWviw2ua4IRi-orcC78.js line 1 > eval line 6885 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script.4dex.io/localstore.js line 1 > Function, line 4: TypeError: t is null
+JavaScript error: https://script.4dex.io/localstore.js line 1 > Function, line 4: TypeError: t is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://ads.pubmatic.com/AdServer/js/user_sync.html?kdntuid=1&p=160037, line 1: ReferenceError: CommonMeta is not defined
+JavaScript error: https://ads.pubmatic.com/AdServer/js/user_sync.html?p=159110&predirect=https%3A%2F%2Fmp.4dex.io%2Fsetuid%3Fbidder%3Dpubmatic%26uid%3D(PM_UID), line 1: ReferenceError: CommonMeta is not defined
+JavaScript error: https://ads.pubmatic.com/AdServer/js/user_sync.html?p=159110&predirect=https%3A%2F%2Fmp.4dex.io%2Fsetuid%3Fbidder%3Dpubmatic%26uid%3D(PM_UID), line 1: ReferenceError: CommonMeta is not defined
+JavaScript error: https://ads.pubmatic.com/AdServer/js/user_sync.html?p=159110&predirect=https%3A%2F%2Fmp.4dex.io%2Fsetuid%3Fbidder%3Dpubmatic%26uid%3D(PM_UID), line 1: ReferenceError: CommonMeta is not defined
+JavaScript warning: https://z.moatads.com/quantcastv2691176990399/moatad.js#moatClientLevel1=p-4T98ck4dZrJdS&moatClientLevel2=qfm&moatClientLevel3=575ed96c-9071-44a7-8100-eb2b5a6f6992&moatClientLevel4=25a9f6a5-db2d-48a7-9f84-ac50c16b40c3&uid=r1fwXYVl1EiieNRAkhnTW891_3G0Q9N_Njc=, line 254: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640469942681	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.somplo.com/prod/test/251119/new-tag.min.js?cb=8, line 282: unreachable code after return statement
+JavaScript warning: https://cdn.somplo.com/prod/test/251119/new-tag.min.js?cb=8, line 282: unreachable code after return statement
+JavaScript warning: https://cdn.somplo.com/prod/test/251119/new-tag.min.js?cb=8, line 282: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 132 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 2577 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 3647 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640469948566	Marionette	INFO	Stopped listening on port 52394
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390147,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390147,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390147,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390147,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390147,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390147,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390147,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1059: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\USER\AppData\Local\Temp\rust_mozprofilelyHues\protections.sqlite
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ge] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1059: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\USER\AppData\Local\Temp\rust_mozprofileIzM0ws\protections.sqlite

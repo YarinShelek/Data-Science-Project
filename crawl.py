@@ -46,12 +46,10 @@ try:
             #w/r
             WinRate = driver.find_elements(By.CLASS_NAME, "champion-rates") #w/r + games
             if len(WinRate) > 0:
-                print(WinRate)
                 win_rate = WinRate[0].text.split("/")[0].split("%")[0] #w/r
-                win = WinRate.text.split("/")[1].split("W")[0] #wins
-                loss = WinRate.text.split("/")[1].split("W")[1].split("L")[0] #losses
+                win = WinRate[0].text.split("/")[1].split("W")[0] #wins
+                loss = WinRate[0].text.split("/")[1].split("W")[1].split("L")[0] #losses
                 games = int(win)+int(loss)
-
                 players_stats["WinRate"] = int(win_rate)
                 players_stats["Games"] = games
             else:

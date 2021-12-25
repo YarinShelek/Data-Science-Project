@@ -2,6 +2,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
 import pandas as pd
+from datetime import datetime
 import random
 try:
     driver = webdriver.Firefox()
@@ -95,7 +96,10 @@ try:
             else:
                 page += 3000
 
-            print(f"going to page {page}")
+            now = datetime.now()
+            current_time = now.strftime("%H:%M:%S")  # https://www.programiz.com/python-programming/datetime/current-time
+
+            print(f"going to page {page} at {current_time}")
             driver.get(url+f"&page={page}")
             curr_player = -1
             time.sleep(8)

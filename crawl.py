@@ -7,7 +7,7 @@ try:
     driver = webdriver.Firefox()
     url = "https://u.gg/leaderboards/ranking?region=euw1"
     driver.get(url)
-    time.sleep(5) #wait for the page to load
+    time.sleep(8) #wait for the page to load
 
     page = 0
     curr_player = -1
@@ -21,12 +21,14 @@ try:
                 ads[ad].click() #close ad
         if curr_player < len(players_list):
             players_list[curr_player].click() #enter player number i page
-            time.sleep(5) #wait for player page to load
+            time.sleep(8) #wait for player page to load
             players_stats = {} # stats dict
 
             #check if u.gg is trolling us:
             player_not_found = driver.find_element(By.CLASS_NAME, "white-bold").text
             if "Oh no! We couldn't find summoner" in player_not_found:
+                driver.back()
+                time.sleep(8)
                 continue
 
             #ranking
@@ -77,9 +79,9 @@ try:
                 df.to_csv(file, index=False, header=False)
 
             driver.back()
-            time.sleep(5)
+            time.sleep(8)
             driver.back()
-            time.sleep(5)
+            time.sleep(8)
 
         if curr_player >= len(players_list): #check if done with page
             if page == 0: #if first page
@@ -98,7 +100,7 @@ try:
 
             driver.get(url+f"&page={page}")
             curr_player = -1
-            time.sleep(6)
+            time.sleep(8)
         stop = driver.find_elements(By.CLASS_NAME, "content-section leaderboard_table_error") #check for no-content error (means we are overflowing players pages, no content left)
         if len(stop) > 0:
             break

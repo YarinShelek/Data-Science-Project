@@ -29,10 +29,11 @@ try:
 
             #check if u.gg is trolling us:
             player_not_found = driver.find_elements(By.CLASS_NAME, "white-bold")
-            if player_not_found is not None and "Oh no! We couldn't find summoner" in player_not_found[0].text:
-                driver.back()
-                time.sleep(8)
-                continue
+            if player_not_found:
+                if "Oh no! We couldn't find summoner" in player_not_found[0].text:
+                    driver.back()
+                    time.sleep(8)
+                    continue
 
             #ranking
             rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text  #get his ranking info
@@ -107,7 +108,7 @@ try:
             time.sleep(8)
 
         stop = driver.find_elements(By.CLASS_NAME, "content-section leaderboard_table_error") #check for no-content error (means we are overflowing players pages, no content left)
-        if stop is not None:
+        if stop:
             break
 
     driver.close()

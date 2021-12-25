@@ -23,6 +23,12 @@ try:
             players_list[curr_player].click() #enter player number i page
             time.sleep(5) #wait for player page to load
             players_stats = {} # stats dict
+
+            #check if u.gg is trolling us:
+            player_not_found = driver.find_element(By.CLASS_NAME, "white-bold").text
+            if "Oh no! We couldn't find summoner" in player_not_found:
+                continue
+
             #ranking
             rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text  #get his ranking info
             players_stats["Rank"] = rank

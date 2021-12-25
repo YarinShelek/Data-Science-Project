@@ -84,23 +84,22 @@ try:
             time.sleep(8)
 
         if curr_player >= len(players_list): #check if done with page
-            if page == 0: #if first page
-                driver.find_element(By.CLASS_NAME, "skip-to").click() #next page
             if page <= 10:
                 page += 1
+            elif page <= 1000:
+                page += 500
+            elif page <= 10000:
+                page += 1000
+            elif page <= 20000:
+                page += 2000
             else:
-                if page < 1000:
-                    page += 500
-                if 1000 <= page < 10000:
-                    page += 1000
-                if 10000 <= page < 20000:
-                    page += 2000
-                if page >= 20000:
-                    page += 3000
+                page += 3000
 
+            print(f"going to page {page}")
             driver.get(url+f"&page={page}")
             curr_player = -1
             time.sleep(8)
+
         stop = driver.find_elements(By.CLASS_NAME, "content-section leaderboard_table_error") #check for no-content error (means we are overflowing players pages, no content left)
         if len(stop) > 0:
             break

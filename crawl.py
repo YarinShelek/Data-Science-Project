@@ -16,18 +16,20 @@ try:
     while True:
         curr_player += random.randint(1, 11) #increase players search number randomly (1-10)
         players_list = driver.find_elements(By.CLASS_NAME, "summoner") #get all players in page
+
         ads = driver.find_elements(By.ID, "desktop-anchor-close") #find ads
         if len(ads) > 0:
             for ad in range(len(ads)):
                 ads[ad].click() #close ad
+
         if curr_player < len(players_list):
             players_list[curr_player].click() #enter player number i page
             time.sleep(8) #wait for player page to load
             players_stats = {} # stats dict
 
             #check if u.gg is trolling us:
-            player_not_found = driver.find_element(By.CLASS_NAME, "white-bold").text
-            if "Oh no! We couldn't find summoner" in player_not_found:
+            player_not_found = driver.find_elements(By.CLASS_NAME, "white-bold")
+            if player_not_found is not None and "Oh no! We couldn't find summoner" in player_not_found[0].text:
                 driver.back()
                 time.sleep(8)
                 continue
@@ -105,10 +107,12 @@ try:
             time.sleep(8)
 
         stop = driver.find_elements(By.CLASS_NAME, "content-section leaderboard_table_error") #check for no-content error (means we are overflowing players pages, no content left)
-        if len(stop) > 0:
+        if stop is not None:
             break
 
     driver.close()
 
 except Exception as e:
-    print(f'crashed at page {page}')
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    print(f'crashed at page {page} at {current_time}')

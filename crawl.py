@@ -120,4 +120,4 @@ try:
 except Exception as e:
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
-    print(f'crashed at page {page} at {current_time} with {data*11} data')
+    print(f'crashed at page {page} at {current_time} with {data*11} data\n Cause of crash: {e}')

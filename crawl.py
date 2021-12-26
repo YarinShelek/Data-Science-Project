@@ -8,9 +8,9 @@ try:
     driver = webdriver.Firefox()
     url = "https://u.gg/leaderboards/ranking?region=euw1"
     driver.get(url)
-    time.sleep(8) #wait for the page to load
+    time.sleep(10) #wait for the page to load
     data = 0
-    page = 0
+    page = 1
     curr_player = -1
 
     while True:
@@ -24,7 +24,7 @@ try:
 
         if curr_player < len(players_list):
             players_list[curr_player].click() #enter player number i page
-            time.sleep(8) #wait for player page to load
+            time.sleep(10) #wait for player page to load
             players_stats = {} # stats dict
 
             #check if u.gg is trolling us:
@@ -32,7 +32,7 @@ try:
             if player_not_found:
                 if "Oh no! We couldn't find summoner" in player_not_found[0].text:
                     driver.back()
-                    time.sleep(8)
+                    time.sleep(10)
                     continue
 
             #ranking
@@ -55,7 +55,7 @@ try:
             else:
                 driver.back()
                 driver.back()
-                time.sleep(8)
+                time.sleep(10)
                 continue
             #kda
             kda_stats = driver.find_elements(By.CLASS_NAME, "kda")[0].find_elements(By.TAG_NAME, "strong")
@@ -89,7 +89,7 @@ try:
 
             driver.back()
             driver.back()
-            time.sleep(8)
+            time.sleep(10)
 
         if curr_player >= len(players_list): #check if done with page
             if page <= 10:

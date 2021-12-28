@@ -229,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640709022682</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="crawling u.gg is painful.">
+      <created>1640710776884</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1640710776884</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -245,6 +252,7 @@
     <MESSAGE value="added cause of crash" />
     <MESSAGE value="changed to explicit waits as time.sleep() is taking forever (we get 1k data in 4hour...)" />
     <MESSAGE value="fixed &quot;unranked&quot; issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed &quot;unranked&quot; issue" />
+    <MESSAGE value="crawling u.gg is painful." />
+    <option name="LAST_COMMIT_MESSAGE" value="crawling u.gg is painful." />
   </component>
 </project>

@@ -20,6 +20,7 @@ try:
     curr_player = -1
 
     while True:
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "summoner")))
         curr_player += random.randint(1, 11) #increase players search number randomly (1-10)
         players_list = driver.find_elements(By.CLASS_NAME, "summoner") #get all players in page
         ads = driver.find_elements(By.ID, "desktop-anchor-close") #find ads
@@ -136,7 +137,6 @@ try:
             print(f"going to page {page} at {current_time}, currently have {data*11} data")
             driver.get(url+f"&page={page}")
             curr_player = -1
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "summoner")))
 
         stop = driver.find_elements(By.CLASS_NAME, "content-section leaderboard_table_error") #check for no-content error (means we are overflowing players pages, no content left)
         if stop != []:

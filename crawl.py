@@ -42,7 +42,9 @@ try:
                             driver.back()
                             time.sleep(10)
                             continue
-                    rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text
+
+                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "rank-text"))) #wait for page to load
+                rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text
                     if rank == "Unranked":
                         driver.find_element(By.CLASS_NAME, "flex-center").click() #update the rank
                         time.sleep(10)
@@ -111,7 +113,7 @@ try:
 
                     df = pd.DataFrame([players_stats])
                     data += 1
-                    with open("Data.csv", "a") as file:
+                    with open("Data2.csv", "a") as file:
                         df.to_csv(file, index=False, header=False)
 
                     driver.back()
@@ -145,6 +147,7 @@ try:
 
                 driver.close()
             except Exception as e:
+                print(e)
                 continue
 
 except Exception as e:

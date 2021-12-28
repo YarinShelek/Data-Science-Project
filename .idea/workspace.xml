@@ -266,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640723367126</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="SHAKING MY HEAD OR HOW CAN YOU NOT SEE TGHIS?!">
+      <created>1640724545880</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1640724545880</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -286,6 +293,7 @@
     <MESSAGE value="update" />
     <MESSAGE value="added except" />
     <MESSAGE value="oops" />
-    <option name="LAST_COMMIT_MESSAGE" value="oops" />
+    <MESSAGE value="SHAKING MY HEAD OR HOW CAN YOU NOT SEE TGHIS?!" />
+    <option name="LAST_COMMIT_MESSAGE" value="SHAKING MY HEAD OR HOW CAN YOU NOT SEE TGHIS?!" />
   </component>
 </project>

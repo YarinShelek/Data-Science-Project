@@ -49,7 +49,9 @@ try:
                 players_stats["Rank"] = rank
             #ranking
 
-            #stats page
+
+        #stats page
+            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "nav-tab-link")))
             stats = driver.find_elements(By.CLASS_NAME, "nav-tab-link")
             stats[1].click() #get to stats page
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "champion-rates"))) #wait for page to load

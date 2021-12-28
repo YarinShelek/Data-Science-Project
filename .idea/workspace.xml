@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawl.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
-    </list>
+    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640707764484</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fixed &quot;unranked&quot; issue">
+      <created>1640709022682</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1640709022682</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -242,6 +244,7 @@
     <MESSAGE value="page swap fix maybe" />
     <MESSAGE value="added cause of crash" />
     <MESSAGE value="changed to explicit waits as time.sleep() is taking forever (we get 1k data in 4hour...)" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed to explicit waits as time.sleep() is taking forever (we get 1k data in 4hour...)" />
+    <MESSAGE value="fixed &quot;unranked&quot; issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed &quot;unranked&quot; issue" />
   </component>
 </project>

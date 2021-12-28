@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawl.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
     </list>
@@ -56,7 +56,7 @@
       <recent name="D:\uni stuff\Data-Science-Project\Routers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.crawl">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data-Science-Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.crawl" />
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.crawl" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640508393267</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="changed to explicit waits as time.sleep() is taking forever (we get 1k data in 4hour...)">
+      <created>1640707764484</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1640707764484</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -234,6 +241,7 @@
     <MESSAGE value="fixed FINAL!! crawling issue" />
     <MESSAGE value="page swap fix maybe" />
     <MESSAGE value="added cause of crash" />
-    <option name="LAST_COMMIT_MESSAGE" value="added cause of crash" />
+    <MESSAGE value="changed to explicit waits as time.sleep() is taking forever (we get 1k data in 4hour...)" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to explicit waits as time.sleep() is taking forever (we get 1k data in 4hour...)" />
   </component>
 </project>

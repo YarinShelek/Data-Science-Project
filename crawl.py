@@ -22,7 +22,6 @@ try:
     while True:
         curr_player += random.randint(1, 11) #increase players search number randomly (1-10)
         players_list = driver.find_elements(By.CLASS_NAME, "summoner") #get all players in page
-
         ads = driver.find_elements(By.ID, "desktop-anchor-close") #find ads
         if len(ads) > 0:
             for ad in range(len(ads)):
@@ -41,11 +40,15 @@ try:
                     driver.back()
                     time.sleep(10)
                     continue
-            driver.find_element(By.CLASS_NAME, "flex-center").click() #update the rank
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "rank-text"))) #wait for update to finish
+            rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text
+            if rank == "Unranked":
+                driver.find_element(By.CLASS_NAME, "flex-center").click() #update the rank
+                time.sleep(10)
+                rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text  #get his ranking info
+            else:
+                players_stats["Rank"] = rank
             #ranking
-            rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text  #get his ranking info
-            players_stats["Rank"] = rank
+
             #stats page
             stats = driver.find_elements(By.CLASS_NAME, "nav-tab-link")
             stats[1].click() #get to stats page

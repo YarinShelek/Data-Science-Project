@@ -20,16 +20,17 @@ try:
     curr_player = -1
 
     while True:
-        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "summoner")))
-        curr_player += random.randint(1, 11) #increase players search number randomly (1-10)
-        players_list = driver.find_elements(By.CLASS_NAME, "summoner") #get all players in page
-        ads = driver.find_elements(By.ID, "desktop-anchor-close") #find ads
-        if len(ads) > 0:
-            for ad in range(len(ads)):
-                ads[ad].click() #close ad
-
-        if curr_player < len(players_list):
             try:
+                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "summoner")))
+                curr_player += random.randint(1, 11) #increase players search number randomly (1-10)
+                players_list = driver.find_elements(By.CLASS_NAME, "summoner") #get all players in page
+                ads = driver.find_elements(By.ID, "desktop-anchor-close") #find ads
+                if len(ads) > 0:
+                    for ad in range(len(ads)):
+                        ads[ad].click() #close ad
+
+                if curr_player < len(players_list):
+
                 players_list[curr_player].click() #enter player number i page
                 WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "flex-center"))) #wait for page to load
                 #^^from selenium docs, "how to use explicit wait", wait for element to load... is said to be faster than time.sleep()

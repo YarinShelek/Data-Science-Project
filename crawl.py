@@ -42,14 +42,13 @@ try:
                             driver.back()
                             time.sleep(10)
                             continue
-
-                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "rank-text"))) #wait for page to load
-                rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text
-                if rank == "Unranked":
+                    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "rank-text")))
+                    rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text
+                    if rank == "Unranked":
                         driver.find_element(By.CLASS_NAME, "flex-center").click() #update the rank
                         time.sleep(10)
                         rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text  #get his ranking info
-                else:
+                    else:
                         players_stats["Rank"] = rank
                     #ranking
 

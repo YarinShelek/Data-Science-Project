@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="OR CHANGE TO PAGE = 3, URL = (URL)&amp;PAGE=3">
+    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawl.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawl.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +29,7 @@
     </option>
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -39,6 +41,7 @@
   </component>
   <component name="ProjectId" id="22NRKGSUM9fAdzcMbf1s28Qqj5x" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -326,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640805424796</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="wtf happened">
+      <created>1640805880356</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1640805880356</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -353,6 +363,7 @@
     <MESSAGE value="changing to crawl tonight" />
     <MESSAGE value="fixed the merging bug" />
     <MESSAGE value="OR CHANGE TO PAGE = 3, URL = (URL)&amp;PAGE=3" />
-    <option name="LAST_COMMIT_MESSAGE" value="OR CHANGE TO PAGE = 3, URL = (URL)&amp;PAGE=3" />
+    <MESSAGE value="wtf happened" />
+    <option name="LAST_COMMIT_MESSAGE" value="wtf happened" />
   </component>
 </project>

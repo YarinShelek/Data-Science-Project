@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 ### selenium set-up
 driver = webdriver.Firefox()
-url = "https://u.gg/leaderboards/ranking?region=euw1"
+url = "https://u.gg/leaderboards/ranking?region=euw"
 driver.get(url)
 page = 0 #CHANGE TO CHANGE CRAWLING PAGE
 time.sleep(5) #wait for the page to load
@@ -137,8 +137,8 @@ while True:
             driver.get(url+f"&page={page}")
             curr_player = -1
 
-        stop = driver.find_elements(By.CLASS_NAME, "content-section leaderboard_table_error") #check for no-content error (means we are overflowing players pages, no content left)
-        if stop != []:
+        if page >= 42000: #last page that has data
+            print(f"Done with crawling {current_time}")
             break
 
     except Exception as e:

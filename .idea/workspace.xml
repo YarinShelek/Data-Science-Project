@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="fixed the merging bug">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="OR CHANGE TO PAGE = 3, URL = (URL)&amp;PAGE=3">
       <change beforePath="$PROJECT_DIR$/crawl.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawl.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -320,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640792333640</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="OR CHANGE TO PAGE = 3, URL = (URL)&amp;PAGE=3">
+      <created>1640805424796</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1640805424796</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -346,6 +352,7 @@
     <MESSAGE value="final fix" />
     <MESSAGE value="changing to crawl tonight" />
     <MESSAGE value="fixed the merging bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the merging bug" />
+    <MESSAGE value="OR CHANGE TO PAGE = 3, URL = (URL)&amp;PAGE=3" />
+    <option name="LAST_COMMIT_MESSAGE" value="OR CHANGE TO PAGE = 3, URL = (URL)&amp;PAGE=3" />
   </component>
 </project>

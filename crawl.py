@@ -22,7 +22,6 @@ while True:
         players_list = driver.find_elements(By.CLASS_NAME, "summoner") #get all players in page
 
         ### end get player-list
-
         ##deal with ads
         ads = driver.find_elements(By.ID, "desktop-anchor-close") #find ads
         if len(ads) > 0:

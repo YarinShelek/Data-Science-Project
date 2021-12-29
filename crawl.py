@@ -8,15 +8,14 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 try:
-    options = Options()
-    #options.headless = True
-    driver = webdriver.Firefox(options=options)
+   # options = Options()
+   # options.headless = True
+   # driver = webdriver.Firefox(options=options)
+    driver = webdriver.Firefox()
     url = "https://u.gg/leaderboards/ranking?region=euw1"
-    url = "https://u.gg/leaderboards/ranking?region=euw1&page=2214" #CHANGE TO CHANGE CRAWLING PAGE
-    page = 2214 #CHANGE TO CHANGE CRAWLING PAGE
+    page = 0 #CHANGE TO CHANGE CRAWLING PAGE
     driver.get(url)
     time.sleep(10) #wait for the page to load
-    data = 0
     curr_player = -1
 
     while True:
@@ -42,16 +41,10 @@ try:
                         driver.back()
                         time.sleep(10)
                         continue
-                time.sleep(10)
-                rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text
-                if rank == "Unranked":
-                    driver.find_element(By.CLASS_NAME, "flex-center").click() #update the rank
-                    time.sleep(10)
-                    rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text  #get his ranking info
-                else:
-                    players_stats["Rank"] = rank
+                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "update-button"))) #wait for page to load
+                rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text  #get his ranking info
+                players_stats["Rank"] = rank
                 #ranking
-
 
             #stats page
                 stats = driver.find_elements(By.CLASS_NAME, "nav-tab-link")
@@ -118,23 +111,25 @@ try:
                 driver.back()
 
             if curr_player >= len(players_list): #check if done with page
-                if page <= 20:
+                if page <= 1:
                     page += 1
+                elif page <= 20:
+                    page += 2
                 elif page <= 100:
-                    page += 6
+                    page += 4
                 elif page <= 1000:
-                    page += 112
+                    page += 100
                 elif page <= 10000:
-                    page += 202
+                    page += 150
                 elif page <= 20000:
-                    page += 452
+                    page += 200
                 else:
-                    page += 666
+                    page += 330
 
                 now = datetime.now()
                 current_time = now.strftime("%H:%M:%S")  # https://www.programiz.com/python-programming/datetime/current-time
 
-                print(f"going to page {page} at {current_time}, currently have {data*11} data")
+                print(f"going to page {page} at {current_time}")
                 driver.get(url+f"&page={page}")
                 curr_player = -1
 
@@ -143,7 +138,10 @@ try:
                 break
 
         except Exception as e:
-            print(e)
+            time.sleep(5)
+            driver.refresh()
+            driver.back()
+            time.sleep(1)
             continue
     driver.close()
 except Exception as e:

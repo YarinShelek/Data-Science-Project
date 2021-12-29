@@ -47,13 +47,8 @@ while True:
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "update-button"))) #wait for page to load
             rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text  #get his ranking info
             players_stats["Rank"] = rank
-            #ranking
 
-<<<<<<< HEAD
             #stats page
-=======
-        #stats page
->>>>>>> 0ead966f02ba67aa513238feba93d470a80d3029
             ### get his stats
             stats = driver.find_elements(By.CLASS_NAME, "nav-tab-link")
             stats[1].click() #get to stats page

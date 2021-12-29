@@ -49,7 +49,7 @@ while True:
             players_stats["Rank"] = rank
             #ranking
 
-        #stats page
+            #stats page
             ### get his stats
             stats = driver.find_elements(By.CLASS_NAME, "nav-tab-link")
             stats[1].click() #get to stats page

@@ -6,29 +6,31 @@ from datetime import datetime
 import random
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+### selenium set-up
 driver = webdriver.Firefox()
 url = "https://u.gg/leaderboards/ranking?region=euw1"
-page = 0 #CHANGE TO CHANGE CRAWLING PAGE
 driver.get(url)
-time.sleep(10) #wait for the page to load
-
-url = "https://u.gg/leaderboards/ranking?region=euw1"
 page = 0 #CHANGE TO CHANGE CRAWLING PAGE
-driver.get(url)
 time.sleep(5) #wait for the page to load
 curr_player = -1
-
+### end selenium set-up
 while True:
     try:
+        ### get player-list (in page)
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "summoner")))
-        curr_player += random.randint(1, 11) #increase players search number randomly (1-10)
+        curr_player += random.randint(1, 6) #increase players search number randomly (1-5)
         players_list = driver.find_elements(By.CLASS_NAME, "summoner") #get all players in page
+
+        ### end get player-list
+
+        ##deal with ads
         ads = driver.find_elements(By.ID, "desktop-anchor-close") #find ads
         if len(ads) > 0:
             for ad in range(len(ads)):
                 ads[ad].click() #close ad
+        ### end deal with ads
 
+        ###enter player page
         if curr_player < len(players_list):
             players_list[curr_player].click() #enter player number i page
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "flex-center"))) #wait for page to load
@@ -42,12 +44,14 @@ while True:
                     driver.back()
                     time.sleep(10)
                     continue
+
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "update-button"))) #wait for page to load
             rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text  #get his ranking info
             players_stats["Rank"] = rank
             #ranking
 
         #stats page
+            ### get his stats
             stats = driver.find_elements(By.CLASS_NAME, "nav-tab-link")
             stats[1].click() #get to stats page
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "champion-rates"))) #wait for page to load
@@ -106,24 +110,17 @@ while True:
             df = pd.DataFrame([players_stats])
             data += 1
             print(df)
-            with open("Data2.csv", "a") as file:
+            with open("Data3.csv", "a") as file:
                 df.to_csv(file, index=False, header=False)
 
             driver.back()
             driver.back()
-
+        #end player page, go to next player
         if curr_player >= len(players_list): #check if done with page
-
-            if page <= 1:
-                page += 1
-            elif page <= 20:
-                page += 2
-
             if page <= 10:
                 page += 1
             if page <= 20:
                 page +=2
-
             elif page <= 100:
                 page += 4
             elif page <= 1000:

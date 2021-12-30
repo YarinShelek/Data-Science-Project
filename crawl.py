@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 ### selenium set-up
 driver = webdriver.Firefox()
-url = "https://u.gg/leaderboards/ranking?region=euw"
+url = "https://u.gg/leaderboards/ranking?region=euw1"
 driver.get(url)
 page = 0 #CHANGE TO CHANGE CRAWLING PAGE
 time.sleep(5) #wait for the page to load
@@ -106,8 +106,6 @@ while True:
                     players_stats["Multi_Kill"] += int(multis)
 
             df = pd.DataFrame([players_stats])
-            data += 1
-            print(df)
             with open("Data3.csv", "a") as file:
                 df.to_csv(file, index=False, header=False)
 
@@ -117,8 +115,8 @@ while True:
         if curr_player >= len(players_list): #check if done with page
             if page <= 10:
                 page += 1
-            if page <= 20:
-                page +=2
+            elif page <= 20:
+                page += 2
             elif page <= 100:
                 page += 4
             elif page <= 1000:

@@ -46,7 +46,7 @@ while True:
 
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "update-button"))) #wait for page to load
             driver.find_element(By.CSS_SELECTOR, ".default-select__control.css-0").click()
-            time.sleep(1) ##this ^V changes into S11 which is the correct season for data.
+            time.sleep(0.2) ##this ^V changes into S11 which is the correct season for data.
             driver.find_element(By.CSS_SELECTOR, ".default-select__menu.css-l8xc29").click()
             time.sleep(100)
             rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text  #get his ranking info
@@ -73,7 +73,7 @@ while True:
             else: #player has the weird no-info bug on his stat page (very rare, happened once in many players we checked)
                 driver.back()
                 driver.back()
-                time.sleep(10) #wait for page to load. as this happens VERY rarely and in uncertain situations, we will not be using explicit waits here.
+                time.sleep(6) #wait for page to load. as this happens VERY rarely and in uncertain situations, we will not be using explicit waits here.
                 continue
             #kda
             kda_stats = driver.find_elements(By.CLASS_NAME, "kda")[0].find_elements(By.TAG_NAME, "strong")

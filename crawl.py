@@ -1,11 +1,12 @@
-from selenium import webdriver
-import time
+from selenium import webdriver # crawl bot
+import time #for sleep
 from selenium.webdriver.common.by import By
 import pandas as pd
-from datetime import datetime
-import random
+from datetime import datetime # for us to keep track of crawl
+import random # for random player select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import re #to get only his rank name
 ### selenium set-up
 driver = webdriver.Firefox()
 url = "https://u.gg/leaderboards/ranking?region=euw1"
@@ -46,11 +47,11 @@ while True:
 
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "update-button"))) #wait for page to load
             driver.find_element(By.CSS_SELECTOR, ".default-select__control.css-0").click()
-            time.sleep(0.2) ##this ^V changes into S11 which is the correct season for data.
+            time.sleep(1) ##this ^V changes into S11 which is the correct season for data.
             driver.find_element(By.CSS_SELECTOR, ".default-select__menu.css-l8xc29").click()
-            time.sleep(100)
             rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text  #get his ranking info
-            players_stats["Rank"] = rank
+            rank_pattern = r"(\w*)\s?\d?" #we are using regex to find only the rank name, as some ranks appear as such: "RANK 1-4" (rank name, division number)
+            players_stats["Rank"] = re.findall(rank_pattern, rank)[0]
 
             #stats page
             ### get his stats

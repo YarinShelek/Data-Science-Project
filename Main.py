@@ -2,7 +2,6 @@ from fastapi import FastAPI
 import uvicorn
 from fastapi.staticfiles import StaticFiles
 from Routers import MiscRouters, PagesRouters
-import pandas as pd
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="CSS"), name="static")
 app.include_router(MiscRouters.router)

@@ -120,17 +120,17 @@ while True:
             if page <= 10:
                 page += 1
             elif page <= 20:
-                page += 2
+                page += 3
             elif page <= 100:
-                page += 4
+                page += 10
             elif page <= 1000:
-                page += 100
-            elif page <= 10000:
                 page += 150
-            elif page <= 20000:
+            elif page <= 10000:
                 page += 200
+            elif page <= 20000:
+                page += 300
             else:
-                page += 330
+                page += 400
 
             now = datetime.now()
             current_time = now.strftime("%H:%M:%S")  # https://www.programiz.com/python-programming/datetime/current-time

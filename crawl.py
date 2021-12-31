@@ -110,7 +110,7 @@ while True:
                     players_stats["Multi_Kill"] += int(multis)
 
             df = pd.DataFrame([players_stats])
-            with open("Data3.csv", "a") as file:
+            with open("DataFromCrawl.csv", "a") as file:
                 df.to_csv(file, index=False, header=False)
 
             driver.back()

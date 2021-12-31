@@ -45,6 +45,10 @@ while True:
                     continue
 
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "update-button"))) #wait for page to load
+            driver.find_element(By.CSS_SELECTOR, ".default-select__control.css-0").click()
+            time.sleep(1) ##this ^V changes into S11 which is the correct season for data.
+            driver.find_element(By.CSS_SELECTOR, ".default-select__menu.css-l8xc29").click()
+            time.sleep(100)
             rank = driver.find_element(By.CLASS_NAME, "rank-text").find_element(By.TAG_NAME, "strong").text  #get his ranking info
             players_stats["Rank"] = rank
 
@@ -142,7 +146,9 @@ while True:
     except Exception as e:
         time.sleep(5)
         driver.refresh()
-        driver.back()
+        if page!=0:
+            driver.get(url+f"&page={page}")
+        else: driver.get(url)
         time.sleep(1)
         continue
 driver.close()

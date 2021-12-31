@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data3.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawl.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
     </list>
@@ -344,11 +345,17 @@
       <option name="project" value="LOCAL" />
       <updated>1640812251280</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="the merge added so many unnoticed bugs...">
+      <created>1640847339822</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1640847339822</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bug fix" />
     <MESSAGE value="fixed duplication bug.&#10;made code prettier.&#10;new parameter names." />
     <MESSAGE value="edited the page changing conditions&#10;added a print to show when we go to next page" />
     <MESSAGE value="more bugfixes" />
@@ -373,6 +380,7 @@
     <MESSAGE value="OR CHANGE TO PAGE = 3, URL = (URL)&amp;PAGE=3" />
     <MESSAGE value="wtf happened" />
     <MESSAGE value="we are done with crawl.py!" />
-    <option name="LAST_COMMIT_MESSAGE" value="we are done with crawl.py!" />
+    <MESSAGE value="the merge added so many unnoticed bugs..." />
+    <option name="LAST_COMMIT_MESSAGE" value="the merge added so many unnoticed bugs..." />
   </component>
 </project>

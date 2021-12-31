@@ -18,7 +18,7 @@ while True:
     try:
         ### get player-list (in page)
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "summoner")))
-        curr_player += random.randint(1, 6) #increase players search number randomly (1-5)
+        curr_player += random.randint(1, 11) #increase players search number randomly (1-10)
         players_list = driver.find_elements(By.CLASS_NAME, "summoner") #get all players in page
 
         ### end get player-list

@@ -1,4 +1,5 @@
 <head>
+    <link href="{{ url_for('static', path='/CSS.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    {% block head %}
     <title>{{Title}}</title>
     {% endblock %}
@@ -15,7 +16,7 @@
                 <a class="nav-link" href="/DataSource">Data Source</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/OriginalData">Original Data</a>
+                <a class="nav-link" href="/DataCleaning">Data Cleaning</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="/EDA">EDA</a>

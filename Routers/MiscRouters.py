@@ -21,3 +21,9 @@ def ChallengerLogo():
 @router.get("/DiamondLogo")
 def DiamondLogo():
     return FileResponse("Images/diamond.png")
+@router.get("/PlotBeforeClean")
+def PlotBeforeClean():
+    return FileResponse("Plots/Plot_Before_Cleaning.png")
+@router.get("/PlotAfterClean")
+def PlotAfterClean():
+    return FileResponse("Plots/Plot_After_Cleaning.png")

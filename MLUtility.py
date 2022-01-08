@@ -15,7 +15,7 @@ def read_csv():
         return df.drop("Rank", axis=1), pd.Series(df["Rank"])
 
 def factorize(Column):
-    return Column.replace(Consts.replace_map).sort_values()
+    return Column.replace(Consts.replace_map)
 
 def std_scale_df(dataset):
     scaler = StandardScaler()
@@ -65,12 +65,13 @@ def find_best_estimators(type,X_train, y_train):
     best_f1_val = clf.best_score_
     return best_num_estimators, best_f1_val
 
-def get_player_data(winrate, games, kda, kills, deaths, assists, cs, damage, gold, multikills):
+def get_player_data():
+    winrate, games, kda, kills, deaths, assists, cs, damage, gold, multikills = None #CAHNGE THIS
     return [winrate, games, kda, kills, deaths, assists, cs, damage, gold, multikills]
 
 def scale_palyer_data(scaler, player_df):
     return scaler.transform(np.array(player_df).reshape(-1, 10))
 
-def predict_player_rank(model ,scaled_player_df):
+def predict_player_rank(model, scaled_player_df):
     result = model.predict(scaled_player_df)
-    return Consts.replace_map[result]
+    return Consts.replace_list[result]

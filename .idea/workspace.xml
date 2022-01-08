@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MLUtility.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MachineLearning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanData.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MLUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLUtility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/MachineLearning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -475,11 +477,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641216651593</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="added ML">
+      <created>1641645572824</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1641645572824</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added cause of crash" />
     <MESSAGE value="changed to explicit waits as time.sleep() is taking forever (we get 1k data in 4hour...)" />
     <MESSAGE value="fixed &quot;unranked&quot; issue" />
     <MESSAGE value="crawling u.gg is painful." />
@@ -504,6 +512,7 @@
     <MESSAGE value="added regex to get rid of rank number" />
     <MESSAGE value="finished dealing with data, crawl.py is no more" />
     <MESSAGE value="data" />
-    <option name="LAST_COMMIT_MESSAGE" value="data" />
+    <MESSAGE value="added ML" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ML" />
   </component>
 </project>

@@ -6,9 +6,54 @@
         <h2>MAKE THIS PRETTY</h2>
         <p>put this in a container:</p>
         <a href="#">Test data vs model results</a><br>
-        <a href="#">test model with newly made up data</a><br>
-    </center>
 
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Test Model vs Random Player
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form action="/RankGuess" method="post">
+                            <div class="form-group">
+                                <label for="WinRate">Email address</label>
+                                <input type="text" class="form-control" name="WinRate" id="WinRate" aria-describedby="emailHelp" placeholder="Win Rate">
+
+                                <label for="Games">Games</label>
+                                <input type="text" class="form-control" name="Games" id="Games" placeholder="Games">
+
+                                <label for="Kills">Games</label>
+                                <input type="text" class="form-control" name="Kills" id="Kills" placeholder="Kills">
+
+                                <label for="Deaths">Games</label>
+                                <input type="text" class="form-control" name="Deaths" d="Deaths" placeholder="Deaths">
+
+                                <label for="Assists">Games</label>
+                                <input type="text" class="form-control" name="Assists" id="Assists" placeholder="Assists">
+
+                                <label for="CS">Games</label>
+                                <input type="text" class="form-control" name="CS" id="CS" placeholder="CS">
+
+                                <label for="Damage">Games</label>
+                                <input type="text" class="form-control" name="Damage" id="Damage" placeholder="Damage">
+
+                                <label for="Gold">Games</label>
+                                <input type="text" class="form-control" name="Gold" id="Gold" placeholder="Gold">
+
+                                <label for="Multi_Kills">Games</label>
+                                <input type="text" class="form-control" name="Multi_Kills" id="Multi_Kills" placeholder="Multi Kills">
+                            </div>
+                            <div class="form-group form-check">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+                            <button type="button" class="btn btn-secondary btn-lg btn-block" data-dismiss="modal">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
 
 </div>
 {% endblock %}

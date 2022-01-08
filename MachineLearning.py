@@ -3,7 +3,6 @@ import MLUtility as util
 
 #start preparing data
 ml_df, rank_df = util.read_csv()
-#player_df = util.get_player_data() #make this into a function
 
 rank_df = util.factorize(rank_df)
 scaled_df, scaler = util.std_scale_df(ml_df)

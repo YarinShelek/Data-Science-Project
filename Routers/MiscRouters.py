@@ -14,13 +14,30 @@ def HomePage(request: Request):
 @router.get("/Lolgo")
 def Lolgo():
     return FileResponse("Images/lolgo.png")
-@router.get("/ChallengerLogo")
-def ChallengerLogo():
-    return FileResponse("Images/challenger.png")
 
+
+#ranks
+@router.get("/ApexLogo")
+def ApexLogo():
+    return FileResponse("Images/ApexLogo.png")
 @router.get("/DiamondLogo")
 def DiamondLogo():
-    return FileResponse("Images/diamond.png")
+    return FileResponse("Images/DiamondLogo.png")
+@router.get("/PlatinumLogo")
+def PlatinumLogo():
+    return FileResponse("Images/PlatinumLogo.png")
+@router.get("/GoldLogo")
+def GoldLogo():
+    return FileResponse("Images/GoldLogo.png")
+@router.get("/SilverLogo")
+def SilverLogo():
+    return FileResponse("Images/SilverLogo.png")
+@router.get("/BronzeLogo")
+def BronzeLogo():
+    return FileResponse("Images/BronzeLogo.png")
+
+
+#plots
 @router.get("/PlotBeforeClean")
 def PlotBeforeClean():
     return FileResponse("Plots/Plot_Before_Cleaning.png")

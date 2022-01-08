@@ -4,13 +4,16 @@ from sklearn import metrics
 from sklearn.metrics import make_scorer
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 import numpy as np
+
 from Consts import Consts
+
+
 def read_csv():
-    with open("CleanData.csv", "r") as DataFile:
+    with open(Consts.Clean_Data_File, "r") as DataFile:
         df = pd.read_csv(DataFile)
         return df.drop("Rank", axis=1), pd.Series(df["Rank"])
 
@@ -65,13 +68,15 @@ def find_best_estimators(type,X_train, y_train):
     best_f1_val = clf.best_score_
     return best_num_estimators, best_f1_val
 
-def get_player_data():
-    winrate, games, kda, kills, deaths, assists, cs, damage, gold, multikills = None #CAHNGE THIS
-    return [winrate, games, kda, kills, deaths, assists, cs, damage, gold, multikills]
-
 def scale_palyer_data(scaler, player_df):
-    return scaler.transform(np.array(player_df).reshape(-1, 10))
+    return scaler.transform(np.array(player_df).reshape(-1, 9))
 
-def predict_player_rank(model, scaled_player_df):
-    result = model.predict(scaled_player_df)
+def predict_player_rank(player_df):
+    ml_df, rank_df = read_csv()
+    rank_df = factorize(rank_df)
+    scaled_df, scaler = std_scale_df(ml_df)
+    X_train, _, y_train, _ = train_test_split(scaled_df, rank_df, test_size=0.2, random_state=42)
+    model = get_model("SVC", X_train, y_train)
+    scaled_player = scale_palyer_data(scaler, player_df)
+    result = model.predict(scaled_player)[0]
     return Consts.replace_list[result]

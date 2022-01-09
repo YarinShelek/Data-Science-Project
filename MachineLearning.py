@@ -68,11 +68,13 @@ def ml(standalone=True):
                 STD["RF"] = [RF_n, RF_prediction_f1, RF_prediction_accuracy]
                 STD["LR"] = [0, LR_prediction_f1, LR_prediction_accuracy]
                 STD["SVC"] = [0, SVC_prediction_f1, SVC_prediction_accuracy]
+                STD["DT"] = [DT_n, DT_prediction_f1, DT_prediction_accuracy]
             else:
                 MM["KNN"] = [KNN_n, KNN_prediction_f1, KNN_prediction_accuracy]
                 MM["RF"] = [RF_n, RF_prediction_f1, RF_prediction_accuracy]
                 MM["LR"] = [0, LR_prediction_f1, LR_prediction_accuracy]
                 MM["SVC"] = [0, SVC_prediction_f1, SVC_prediction_accuracy]
+                MM["DT"] = [DT_n, DT_prediction_f1, DT_prediction_accuracy]
     if standalone == False:
         return [STD, MM]
 if __name__ == "__main__": #we do this cause we want to use the data from here in the ml page, but also want to leave the option to run this as a standalone

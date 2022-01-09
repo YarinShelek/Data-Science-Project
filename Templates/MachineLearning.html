@@ -25,12 +25,12 @@
         </div>
         <div class="container-sm" style="position:absolute; bottom:10%; left:5%">
             <center><h1>Decision Tree</h1></center>
-            <h2> best Depth: {{ Data[0]["RF"][DataMap["n"][0]] }} </h2>
-            <h2> best Split: {{ Data[0]["RF"][DataMap["n"][1]] }} </h2>
-            <h2> f1 score (std scaling): {{ Data[0]["RF"][DataMap["f1"]] }} </h2>
-            <h2> f1 score (MM scaling): {{ Data[1]["RF"][DataMap["f1"]] }} </h2>
-            <h2> accuracy score (std scaling): {{ Data[0]["RF"][DataMap["acc"]] }} </h2>
-            <h2> accuracy score (MM scaling): {{ Data[1]["RF"][DataMap["acc"]] }} </h2>
+            <h2> best Depth: {{ Data[0]["DT"][DataMap["n"]][0] }} </h2>
+            <h2> best Split: {{ Data[0]["DT"][DataMap["n"]][1] }} </h2>
+            <h2> f1 score (std scaling): {{ Data[0]["DT"][DataMap["f1"]] }} </h2>
+            <h2> f1 score (MM scaling): {{ Data[1]["DT"][DataMap["f1"]] }} </h2>
+            <h2> accuracy score (std scaling): {{ Data[0]["DT"][DataMap["acc"]] }} </h2>
+            <h2> accuracy score (MM scaling): {{ Data[1]["DT"][DataMap["acc"]] }} </h2>
         </div>
         <div class="container-sm" style="color:gold; position:absolute; bottom:50%; left:40%">
             <center><h1>Support Vector</h1></center>

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="" />
+    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MLUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLUtility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/MachineLearning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/MachineLearning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/MachineLearning.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +54,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../StockX_Crawling" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -519,11 +524,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641747296243</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fixed small dt bug">
+      <created>1641747496965</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1641747496965</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="oops" />
     <MESSAGE value="SHAKING MY HEAD OR HOW CAN YOU NOT SEE TGHIS?!" />
     <MESSAGE value="fix indent" />
     <MESSAGE value="reFIX" />
@@ -548,6 +559,7 @@
     <MESSAGE value="ml update" />
     <MESSAGE value="ml page update" />
     <MESSAGE value="added DT" />
-    <option name="LAST_COMMIT_MESSAGE" value="added DT" />
+    <MESSAGE value="fixed small dt bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed small dt bug" />
   </component>
 </project>

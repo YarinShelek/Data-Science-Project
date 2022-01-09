@@ -7,8 +7,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
-
+from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
+from sklearn.neural_network import MLPClassifier
 import numpy as np
 
 from Consts import Consts
@@ -38,9 +39,13 @@ def get_model(type, ml_df, rank_df, n=0):
     if type == "KNN":
         return KNeighborsClassifier(n_neighbors=n).fit(ml_df, rank_df)
     if type == "LR":
-        return linear_model.LogisticRegression(max_iter=200).fit(ml_df, rank_df)
+        return linear_model.LogisticRegression().fit(ml_df, rank_df)
     if type == "DT":
         return DecisionTreeClassifier(max_depth=n[0], min_samples_split=n[1]).fit(ml_df, rank_df)
+    if type == "Bayes":
+        return GaussianNB().fit(ml_df, rank_df)
+    if type == "NN":
+        return MLPClassifier(random_state=69).fit(ml_df, rank_df)
 
 def calc_evaluation_val(eval_metric, y_test, y_predicted):
     if eval_metric == 'accuracy':
@@ -86,7 +91,7 @@ def predict_player_rank(player_df):
     rank_df = factorize(rank_df)
     scaled_df, scaler = std_scale_df(ml_df)
     X_train, _, y_train, _ = train_test_split(scaled_df, rank_df, test_size=0.2, random_state=42)
-    model = get_model("SVC", X_train, y_train)
+    model = get_model("NN", X_train, y_train)
     scaled_player = scale_palyer_data(scaler, player_df)
     result = model.predict(scaled_player)[0]
     return Consts.replace_list[result]

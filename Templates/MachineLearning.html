@@ -15,14 +15,15 @@
             <h2> accuracy score (std scaling): {{ Data[0]["KNN"][DataMap["acc"]] }} </h2>
             <h2> accuracy score (MM scaling): {{ Data[1]["KNN"][DataMap["acc"]] }} </h2>
         </div>
-        <div class="container-sm" style="position:absolute; top:10%; right:7%">
-            <center><h1>Random Forest</h1></center>
-            <h2> best N: {{ Data[0]["RF"][DataMap["n"]] }} </h2>
-            <h2> f1 score (std scaling): {{ Data[0]["RF"][DataMap["f1"]] }} </h2>
-            <h2> f1 score (MM scaling): {{ Data[1]["RF"][DataMap["f1"]] }} </h2>
-            <h2> accuracy score (std scaling): {{ Data[0]["RF"][DataMap["acc"]] }} </h2>
-            <h2> accuracy score (MM scaling): {{ Data[1]["RF"][DataMap["acc"]] }} </h2>
+
+        <div class="container-sm" style="position:absolute; bottom:40%; left:5%">
+            <center><h1>Support Vector</h1></center>
+            <h2> f1 score (std scaling): {{ Data[0]["SVC"][DataMap["f1"]] }} </h2>
+            <h2> f1 score (MM scaling): {{ Data[1]["SVC"][DataMap["f1"]] }} </h2>
+            <h2> accuracy score (std scaling): {{ Data[0]["SVC"][DataMap["acc"]] }} </h2>
+            <h2> accuracy score (MM scaling): {{ Data[1]["SVC"][DataMap["acc"]] }} </h2>
         </div>
+
         <div class="container-sm" style="position:absolute; bottom:10%; left:5%">
             <center><h1>Decision Tree</h1></center>
             <h2> best Depth: {{ Data[0]["DT"][DataMap["n"]][0] }} </h2>
@@ -32,15 +33,35 @@
             <h2> accuracy score (std scaling): {{ Data[0]["DT"][DataMap["acc"]] }} </h2>
             <h2> accuracy score (MM scaling): {{ Data[1]["DT"][DataMap["acc"]] }} </h2>
         </div>
-        <div class="container-sm" style="color:gold; position:absolute; bottom:50%; left:40%">
-            <center><h1>Support Vector</h1></center>
-            <h2> f1 score (std scaling): {{ Data[0]["SVC"][DataMap["f1"]] }} </h2>
-            <h2> f1 score (MM scaling): {{ Data[1]["SVC"][DataMap["f1"]] }} </h2>
-            <h2> accuracy score (std scaling): {{ Data[0]["SVC"][DataMap["acc"]] }} </h2>
-            <h2> accuracy score (MM scaling): {{ Data[1]["SVC"][DataMap["acc"]] }} </h2>
+
+        <div class="container-sm" style="position:absolute; color:gold; bottom:50%; right:42%">
+            <center><h1>Neural Network</h1></center>
+            <h2> f1 score (std scaling): {{ Data[0]["NN"][DataMap["f1"]] }} </h2>
+            <h2> f1 score (MM scaling): {{ Data[1]["NN"][DataMap["f1"]] }} </h2>
+            <h2> accuracy score (std scaling): {{ Data[0]["NN"][DataMap["acc"]] }} </h2>
+            <h2> accuracy score (MM scaling): {{ Data[1]["NN"][DataMap["acc"]] }} </h2>
         </div>
+
+        <div class="container-sm" style="position:absolute; top:10%; right:7%">
+            <center><h1>Random Forest</h1></center>
+            <h2> best N: {{ Data[0]["RF"][DataMap["n"]] }} </h2>
+            <h2> f1 score (std scaling): {{ Data[0]["RF"][DataMap["f1"]] }} </h2>
+            <h2> f1 score (MM scaling): {{ Data[1]["RF"][DataMap["f1"]] }} </h2>
+            <h2> accuracy score (std scaling): {{ Data[0]["RF"][DataMap["acc"]] }} </h2>
+            <h2> accuracy score (MM scaling): {{ Data[1]["RF"][DataMap["acc"]] }} </h2>
+        </div>
+
+        <div class="container-sm" style="position:absolute; bottom:40%; right:7%">
+            <center><h1>Bayes</h1></center>
+            <h2> f1 score (std scaling): {{ Data[0]["Bayes"][DataMap["f1"]] }} </h2>
+            <h2> f1 score (MM scaling): {{ Data[1]["Bayes"][DataMap["f1"]] }} </h2>
+            <h2> accuracy score (std scaling): {{ Data[0]["Bayes"][DataMap["acc"]] }} </h2>
+            <h2> accuracy score (MM scaling): {{ Data[1]["Bayes"][DataMap["acc"]] }} </h2>
+        </div>
+
+
         <div class="container-sm" style="position:absolute; bottom:15%; right:7%">
-            <center><h1>LR</h1></center>
+            <center><h1>Linear Regression</h1></center>
             <h2> f1 score (std scaling): {{ Data[0]["LR"][DataMap["f1"]] }} </h2>
             <h2> f1 score (MM scaling): {{ Data[1]["LR"][DataMap["f1"]] }} </h2>
             <h2> accuracy score (std scaling): {{ Data[0]["LR"][DataMap["acc"]] }} </h2>

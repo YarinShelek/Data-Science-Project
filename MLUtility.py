@@ -6,6 +6,8 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+
 from sklearn.svm import SVC
 import numpy as np
 
@@ -37,6 +39,8 @@ def get_model(type, ml_df, rank_df, n=0):
         return KNeighborsClassifier(n_neighbors=n).fit(ml_df, rank_df)
     if type == "LR":
         return linear_model.LogisticRegression(max_iter=200).fit(ml_df, rank_df)
+    if type == "DT":
+        return DecisionTreeClassifier(max_depth=n[0], min_samples_split=n[1]).fit(ml_df, rank_df)
 
 def calc_evaluation_val(eval_metric, y_test, y_predicted):
     if eval_metric == 'accuracy':
@@ -58,15 +62,21 @@ def find_best_estimators(type,X_train, y_train):
     if type == "RF":
         parameters = {'n_estimators': range(3,20)}
         rf = RandomForestClassifier()
+    if type == "DT":
+        parameters = {'max_depth':range(3,20),"min_samples_split":range(3,20)}
+        rf = DecisionTreeClassifier()
+
     clf = GridSearchCV(rf, parameters,scoring=make_scorer(metrics.f1_score, average="weighted"))
     clf.fit(X_train, y_train)
     if type == "KNN":
         best_num_estimators = clf.best_params_['n_neighbors']
     if type == "RF":
         best_num_estimators = clf.best_params_['n_estimators']
+    if type == "DT":
+        best_num_estimators = [clf.best_params_["max_depth"], clf.best_params_["min_samples_split"]]
 
-    best_f1_val = clf.best_score_
-    return best_num_estimators, best_f1_val
+    return best_num_estimators
+
 
 def scale_palyer_data(scaler, player_df):
     return scaler.transform(np.array(player_df).reshape(-1, 9))

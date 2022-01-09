@@ -2,8 +2,9 @@ from fastapi import APIRouter, Request, Depends
 from fastapi.responses import HTMLResponse
 from Consts import Consts, Player
 import pandas as pd
-import numpy as np
+from MachineLearning import ml
 import MLUtility as util
+
 router = APIRouter()
 
 
@@ -24,7 +25,7 @@ def EDA(request: Request):
     return Consts.templates.TemplateResponse("EDA.html", {"request": request, "Title": "EDA Page"})
 @router.get("/MachineLearning", response_class=HTMLResponse)
 def MachineLearning(request: Request):
-    return Consts.templates.TemplateResponse("MachineLearning.html", {"request": request, "Title": "MachineLearning Page"})
+    return Consts.templates.TemplateResponse("MachineLearning.html", {"request": request, "Title": "MachineLearning Page", "Data": ml(True)})
 
 @router.post("/RankGuess", response_class=HTMLResponse)
 def RankGuess(request: Request, FormData: Player = Depends(Player.read_form)):

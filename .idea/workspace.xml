@@ -6,15 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AllData.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/challenger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/diamond.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLUtility.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MachineLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/MachineLearning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routers/MiscRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/MiscRouters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Routers/PagesRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/PagesRouters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/MachineLearning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/MachineLearning.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +63,7 @@
       <recent name="D:\uni stuff\Data-Science-Project\Routers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MachineLearning">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="DataClean" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data-Science-Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -177,8 +171,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MachineLearning" />
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.MachineLearning" />
         <item itemvalue="Python.MLUtility" />
         <item itemvalue="Python.DataClean" />
         <item itemvalue="Python.DataCleaning" />
@@ -495,11 +489,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641662258044</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="MAGIC WAS MADE">
+      <created>1641671132708</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1641671132708</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed &quot;unranked&quot; issue" />
     <MESSAGE value="crawling u.gg is painful." />
     <MESSAGE value="update" />
     <MESSAGE value="added except" />
@@ -524,6 +524,7 @@
     <MESSAGE value="data" />
     <MESSAGE value="added ML" />
     <MESSAGE value="got rid of kda tab as it was hurting our results" />
-    <option name="LAST_COMMIT_MESSAGE" value="got rid of kda tab as it was hurting our results" />
+    <MESSAGE value="MAGIC WAS MADE" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAGIC WAS MADE" />
   </component>
 </project>

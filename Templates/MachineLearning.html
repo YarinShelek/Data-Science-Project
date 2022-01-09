@@ -8,7 +8,7 @@
             Test Model vs Random Player
         </button>
         <div class="container-sm" style="position:absolute; top:10%; left:5%">
-            <center><h1>KNN</h1></center>
+            <center><h1>K Nearest Neighbors</h1></center>
             <h2> best N: {{ Data[0]["KNN"][DataMap["n"]] }} </h2>
             <h2> f1 score (std scaling): {{ Data[0]["KNN"][DataMap["f1"]] }} </h2>
             <h2> f1 score (MM scaling): {{ Data[1]["KNN"][DataMap["f1"]] }} </h2>
@@ -16,15 +16,24 @@
             <h2> accuracy score (MM scaling): {{ Data[1]["KNN"][DataMap["acc"]] }} </h2>
         </div>
         <div class="container-sm" style="position:absolute; top:10%; right:7%">
-            <center><h1>RF</h1></center>
+            <center><h1>Random Forest</h1></center>
             <h2> best N: {{ Data[0]["RF"][DataMap["n"]] }} </h2>
             <h2> f1 score (std scaling): {{ Data[0]["RF"][DataMap["f1"]] }} </h2>
             <h2> f1 score (MM scaling): {{ Data[1]["RF"][DataMap["f1"]] }} </h2>
             <h2> accuracy score (std scaling): {{ Data[0]["RF"][DataMap["acc"]] }} </h2>
             <h2> accuracy score (MM scaling): {{ Data[1]["RF"][DataMap["acc"]] }} </h2>
         </div>
-        <div class="container-sm" style="position:absolute; bottom:15%; left:5%">
-            <center><h1>SVC</h1></center>
+        <div class="container-sm" style="position:absolute; bottom:10%; left:5%">
+            <center><h1>Decision Tree</h1></center>
+            <h2> best Depth: {{ Data[0]["RF"][DataMap["n"][0]] }} </h2>
+            <h2> best Split: {{ Data[0]["RF"][DataMap["n"][1]] }} </h2>
+            <h2> f1 score (std scaling): {{ Data[0]["RF"][DataMap["f1"]] }} </h2>
+            <h2> f1 score (MM scaling): {{ Data[1]["RF"][DataMap["f1"]] }} </h2>
+            <h2> accuracy score (std scaling): {{ Data[0]["RF"][DataMap["acc"]] }} </h2>
+            <h2> accuracy score (MM scaling): {{ Data[1]["RF"][DataMap["acc"]] }} </h2>
+        </div>
+        <div class="container-sm" style="color:gold; position:absolute; bottom:50%; left:40%">
+            <center><h1>Support Vector</h1></center>
             <h2> f1 score (std scaling): {{ Data[0]["SVC"][DataMap["f1"]] }} </h2>
             <h2> f1 score (MM scaling): {{ Data[1]["SVC"][DataMap["f1"]] }} </h2>
             <h2> accuracy score (std scaling): {{ Data[0]["SVC"][DataMap["acc"]] }} </h2>
@@ -54,7 +63,7 @@
                                 <input type="text" class="form-control" name="Kills" id="Kills" placeholder="Kills">
 
                                 <label for="Deaths">Games</label>
-                                <input type="text" class="form-control" name="Deaths" d="Deaths" placeholder="Deaths">
+                                <input type="text" class="form-control" name="Deaths" id="Deaths" placeholder="Deaths">
 
                                 <label for="Assists">Games</label>
                                 <input type="text" class="form-control" name="Assists" id="Assists" placeholder="Assists">

@@ -18,9 +18,9 @@ def ml(standalone=True):
             RF_n = util.find_best_estimators("RF", X_train, y_train)
             DT_n = util.find_best_estimators("DT", X_train, y_train)
         if standalone == False: #manually input previously known best n's
-            KNN_n,  = 18
+            KNN_n  = 18
             DT_n = [9,19]
-            RF_n,  = 19
+            RF_n  = 19
         # end preparing data
 
         ##GET MODELS
@@ -56,10 +56,11 @@ def ml(standalone=True):
                "RF":[f"f1: {RF_prediction_f1}", f"accuracy: {RF_prediction_accuracy}"],
                "KNN":[f"f1: {KNN_prediction_f1}", f"accuracy: {KNN_prediction_accuracy}"],
               "DT": [f"f1: {DT_prediction_f1}", f"accuracy: {DT_prediction_accuracy}"]}]
-        if index == 0:
-            print("STD:", df)
-        else:
-            print("MM:", df)
+        if standalone == True:
+            if index == 0:
+                print("STD:", df)
+            else:
+                print("MM:", df)
 
         if standalone == False:
             if index == 0:

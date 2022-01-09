@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLUtility.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MachineLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/MachineLearning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/MachineLearning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/MachineLearning.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
       <recent name="D:\uni stuff\Data-Science-Project\Routers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MachineLearning">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="DataClean" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data-Science-Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,8 +170,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MachineLearning" />
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.MachineLearning" />
         <item itemvalue="Python.MLUtility" />
         <item itemvalue="Python.DataClean" />
         <item itemvalue="Python.DataCleaning" />
@@ -509,11 +509,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641739468116</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="added DT">
+      <created>1641740676551</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1641740676551</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added except" />
     <MESSAGE value="oops" />
     <MESSAGE value="SHAKING MY HEAD OR HOW CAN YOU NOT SEE TGHIS?!" />
     <MESSAGE value="fix indent" />
@@ -538,6 +544,7 @@
     <MESSAGE value="MAGIC WAS MADE" />
     <MESSAGE value="ml update" />
     <MESSAGE value="ml page update" />
-    <option name="LAST_COMMIT_MESSAGE" value="ml page update" />
+    <MESSAGE value="added DT" />
+    <option name="LAST_COMMIT_MESSAGE" value="added DT" />
   </component>
 </project>

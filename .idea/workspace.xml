@@ -9,6 +9,8 @@
       <change beforePath="$PROJECT_DIR$/Consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MachineLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/MachineLearning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Routers/PagesRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/PagesRouters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/MachineLearning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/MachineLearning.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -496,11 +498,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641671132708</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="ml update">
+      <created>1641737982188</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1641737982188</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="crawling u.gg is painful." />
     <MESSAGE value="update" />
     <MESSAGE value="added except" />
     <MESSAGE value="oops" />
@@ -525,6 +533,7 @@
     <MESSAGE value="added ML" />
     <MESSAGE value="got rid of kda tab as it was hurting our results" />
     <MESSAGE value="MAGIC WAS MADE" />
-    <option name="LAST_COMMIT_MESSAGE" value="MAGIC WAS MADE" />
+    <MESSAGE value="ml update" />
+    <option name="LAST_COMMIT_MESSAGE" value="ml update" />
   </component>
 </project>

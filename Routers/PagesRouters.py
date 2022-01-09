@@ -25,7 +25,7 @@ def EDA(request: Request):
     return Consts.templates.TemplateResponse("EDA.html", {"request": request, "Title": "EDA Page"})
 @router.get("/MachineLearning", response_class=HTMLResponse)
 def MachineLearning(request: Request):
-    return Consts.templates.TemplateResponse("MachineLearning.html", {"request": request, "Title": "MachineLearning Page", "Data": ml(True)})
+    return Consts.templates.TemplateResponse("MachineLearning.html", {"request": request, "Title": "MachineLearning Page", "Data": ml(False), "DataMap": Consts.ml_replace_map})
 
 @router.post("/RankGuess", response_class=HTMLResponse)
 def RankGuess(request: Request, FormData: Player = Depends(Player.read_form)):

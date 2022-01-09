@@ -3,13 +3,40 @@
 {% block content %}
 <div>
     <center style="color:#FFFFFF">
-        <h2>MAKE THIS PRETTY</h2>
-        <p>put this in a container:</p>
-        <a href="#">Test data vs model results</a><br>
 
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
             Test Model vs Random Player
         </button>
+        <div class="container-sm" style="position:absolute; top:10%; left:5%">
+            <center><h1>KNN</h1></center>
+            <h2> best N: {{ Data[0]["KNN"][DataMap["n"]] }} </h2>
+            <h2> f1 score (std scaling): {{ Data[0]["KNN"][DataMap["f1"]] }} </h2>
+            <h2> f1 score (MM scaling): {{ Data[1]["KNN"][DataMap["f1"]] }} </h2>
+            <h2> accuracy score (std scaling): {{ Data[0]["KNN"][DataMap["acc"]] }} </h2>
+            <h2> accuracy score (MM scaling): {{ Data[1]["KNN"][DataMap["acc"]] }} </h2>
+        </div>
+        <div class="container-sm" style="position:absolute; top:10%; right:7%">
+            <center><h1>RF</h1></center>
+            <h2> best N: {{ Data[0]["RF"][DataMap["n"]] }} </h2>
+            <h2> f1 score (std scaling): {{ Data[0]["RF"][DataMap["f1"]] }} </h2>
+            <h2> f1 score (MM scaling): {{ Data[1]["RF"][DataMap["f1"]] }} </h2>
+            <h2> accuracy score (std scaling): {{ Data[0]["RF"][DataMap["acc"]] }} </h2>
+            <h2> accuracy score (MM scaling): {{ Data[1]["RF"][DataMap["acc"]] }} </h2>
+        </div>
+        <div class="container-sm" style="position:absolute; bottom:15%; left:5%">
+            <center><h1>SVC</h1></center>
+            <h2> f1 score (std scaling): {{ Data[0]["SVC"][DataMap["f1"]] }} </h2>
+            <h2> f1 score (MM scaling): {{ Data[1]["SVC"][DataMap["f1"]] }} </h2>
+            <h2> accuracy score (std scaling): {{ Data[0]["SVC"][DataMap["acc"]] }} </h2>
+            <h2> accuracy score (MM scaling): {{ Data[1]["SVC"][DataMap["acc"]] }} </h2>
+        </div>
+        <div class="container-sm" style="position:absolute; bottom:15%; right:7%">
+            <center><h1>LR</h1></center>
+            <h2> f1 score (std scaling): {{ Data[0]["LR"][DataMap["f1"]] }} </h2>
+            <h2> f1 score (MM scaling): {{ Data[1]["LR"][DataMap["f1"]] }} </h2>
+            <h2> accuracy score (std scaling): {{ Data[0]["LR"][DataMap["acc"]] }} </h2>
+            <h2> accuracy score (MM scaling): {{ Data[1]["LR"][DataMap["acc"]] }} </h2>
+        </div>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">

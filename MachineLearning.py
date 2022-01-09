@@ -1,10 +1,10 @@
 from sklearn.model_selection import train_test_split
 import MLUtility as util
 
-def ml(standalone=False):
+def ml(standalone=True):
     #start preparing data
     ml_df, rank_df = util.read_csv()
-    if standalone == True:
+    if standalone == False:
         STD = {"KNN": [], "LR": [], "RF": [], "SVC": []}
         MM = {"KNN": [], "LR": [], "RF": [], "SVC": []}
     rank_df = util.factorize(rank_df)
@@ -13,8 +13,13 @@ def ml(standalone=False):
     scaled_dfs = [mm_scaled_df, scaled_df]
     for index, dataframe in enumerate(scaled_dfs):
         X_train, X_test, y_train, y_test = train_test_split(scaled_df, rank_df, test_size=0.2, random_state=42)
-        KNN_n, _ = util.find_best_estimators("KNN", X_train, y_train)
-        RF_n, _ = util.find_best_estimators("RF", X_train, y_train)
+        if standalone == True:
+            KNN_n, _ = util.find_best_estimators("KNN", X_train, y_train)
+            RF_n, _ = util.find_best_estimators("RF", X_train, y_train)
+        if standalone == False: #manually input previously known best n's
+            KNN_n, _ = 18, 8
+
+            RF_n, _ = 19, 0
         # end preparing data
 
         ##GET MODELS
@@ -50,7 +55,7 @@ def ml(standalone=False):
         else:
             print("MM:", df)
 
-        if standalone == True:
+        if standalone == False:
             if index == 0:
                 STD["KNN"] = [KNN_n, KNN_prediction_f1, KNN_prediction_accuracy]
                 STD["RF"] = [RF_n, RF_prediction_f1, RF_prediction_accuracy]
@@ -61,7 +66,7 @@ def ml(standalone=False):
                 MM["RF"] = [RF_n, RF_prediction_f1, RF_prediction_accuracy]
                 MM["LR"] = [0, LR_prediction_f1, LR_prediction_accuracy]
                 MM["SVC"] = [0, SVC_prediction_f1, SVC_prediction_accuracy]
-    if standalone == True:
-        return STD, MM
+    if standalone == False:
+        return [STD, MM]
 if __name__ == "__main__": #we do this cause we want to use the data from here in the ml page, but also want to leave the option to run this as a standalone
     ml()

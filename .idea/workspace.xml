@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PlotUtility.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Routers/PlotRouters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plots/Apex_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Apex_Mean_Plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plots/Diamond_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Diamond_Mean_Plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plots/Gold_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Gold_Mean_Plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plots/Platinum_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Platinum_Mean_Plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plots/Silver_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Silver_Mean_Plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotUtility.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routers/MiscRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/MiscRouters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routers/PagesRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/PagesRouters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/DataCleaning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/DataCleaning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/DataSource.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/DataSource.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/HomePage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +70,7 @@
       <recent name="D:\uni stuff\Data-Science-Project\Routers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Plotting">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="DataCleaning (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data-Science-Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -175,10 +178,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Main" />
         <item itemvalue="Python.Plotting" />
         <item itemvalue="Python.DataCleaning (1)" />
         <item itemvalue="Python.MachineLearning" />
-        <item itemvalue="Python.Main" />
         <item itemvalue="Python.MLUtility" />
       </list>
     </recent_temporary>

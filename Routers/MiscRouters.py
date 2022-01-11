@@ -37,10 +37,3 @@ def BronzeLogo():
     return FileResponse("Images/BronzeLogo.png")
 
 
-#plots
-@router.get("/PlotBeforeClean")
-def PlotBeforeClean():
-    return FileResponse("Plots/Plot_Before_Cleaning.png")
-@router.get("/PlotAfterClean")
-def PlotAfterClean():
-    return FileResponse("Plots/Plot_After_Cleaning.png")

@@ -2,7 +2,7 @@
 
 {% block content %}
 <div>
-    <center style="color:#FFFFFF">
+    <center style="color:gold">
         <h2>In this section, we have identified and classified outliers and cleaned our data.<br>
         first, we got rid of all the players that do not have a rank, the empty rows we made wihle crawling,<br> and duplicated players (we both ran the crawling and had some duplications).<br>
         after doing that, we plotted the data, and identified some outliers:<br>
@@ -10,8 +10,8 @@
         also we got rid of very low win-rate players (below 30%), as they are rare and most likely just trolls.<br>
         at the end of the cleaning, we got rid of people with over 1500 games, as they are also rare, and pretty much no-lifers.<br>
         Here are the results, after the cleaning:</h2>
-        <a href="/PlotBeforeClean"><img src="/PlotBeforeClean" width="700" height="450" style="position:absolute; bottom:0%; left:0%"></a>
-        <a href="/PlotAfterClean"><img src="/PlotAfterClean" width="700" height="450" style="position:absolute; bottom:0%; right:0%"></a>
+        <a href="/PlotBeforeClean"><img src="/PlotBeforeClean" width="500" height="400" style="position:absolute; bottom:0%; left:0%"></a>
+        <a href="/PlotAfterClean"><img src="/PlotAfterClean" width="500" height="400" style="position:absolute; bottom:0%; right:0%"></a>
         <div class="ScrollStyle">
             {% for table in df %}
             {{ table|safe }}

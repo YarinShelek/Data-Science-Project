@@ -1,16 +1,4 @@
 import pandas as pd
-from sklearn import linear_model
-from sklearn import metrics
-from sklearn.metrics import make_scorer
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import GridSearchCV, train_test_split
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.svm import SVC
-from sklearn.neural_network import MLPClassifier
-import numpy as np
 from Consts import Consts
 
 def read_csv():

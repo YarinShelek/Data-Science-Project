@@ -16,7 +16,7 @@ def DataSource(request: Request):
     return Consts.templates.TemplateResponse("DataSource.html", {"request": request, "Title": "DataSource Page", "df": [df.to_html(index=False,classes="table table-bordered table-dark", justify="justify-all")]})
 @router.get("/DataCleaning", response_class=HTMLResponse)
 def DataCleaning(request: Request):
-    with open(Consts.All_Data_File, "r") as file:
+    with open(Consts.Clean_Data_File, "r") as file:
         df = pd.read_csv(file)
     df=df.dropna()
     return Consts.templates.TemplateResponse("DataCleaning.html", {"request": request, "Title": "DataCleaning Page", "df": [df.to_html(index=False,classes="table table-bordered table-dark", justify="justify-all")]})

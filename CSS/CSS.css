@@ -4,3 +4,6 @@
     max-height: 500px;
     overflow-y: scroll;
 }
+.nowrap {
+  white-space: nowrap;
+}

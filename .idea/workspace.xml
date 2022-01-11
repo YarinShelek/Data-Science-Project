@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Routers/PlotRouters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlotUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotUtility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routers/MiscRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/MiscRouters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/CSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/CSS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/lolgo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/lolgo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Routers/PagesRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/PagesRouters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/DataCleaning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/DataCleaning.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/DataSource.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/DataSource.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routers/PlotRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/PlotRouters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/EDA.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/EDA.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,13 +189,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639675993090</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fixed duplication bug.&#10;made code prettier.&#10;new parameter names.">
-      <created>1640428918728</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1640428918728</updated>
     </task>
     <task id="LOCAL-00005" summary="edited the page changing conditions&#10;added a print to show when we go to next page">
       <created>1640429265621</created>
@@ -538,11 +526,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641910355830</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="-prettify html &#10;-comments&#10;-add plots image routers">
+      <created>1641913748821</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1641913748821</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="final fix" />
     <MESSAGE value="changing to crawl tonight" />
     <MESSAGE value="fixed the merging bug" />
     <MESSAGE value="OR CHANGE TO PAGE = 3, URL = (URL)&amp;PAGE=3" />
@@ -567,6 +561,7 @@
     <MESSAGE value="remade DataCleaning.py" />
     <MESSAGE value="remade CleanData.csv" />
     <MESSAGE value="pre-fix plottings" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre-fix plottings" />
+    <MESSAGE value="-prettify html &#10;-comments&#10;-add plots image routers" />
+    <option name="LAST_COMMIT_MESSAGE" value="-prettify html &#10;-comments&#10;-add plots image routers" />
   </component>
 </project>

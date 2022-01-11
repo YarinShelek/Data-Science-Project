@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="fixed small dt bug">
+    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AllDataNoKDA.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanDataNoKDA.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CleanDataNoKDA.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CleanData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plots/Plot_After_Cleaning.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Plot_After_Cleaning.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/DataCleaning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/DataCleaning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataCleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataCleaning.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +85,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="DataCleaning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="DataCleaning (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data-Science-Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,11 +93,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Templates" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\uni stuff\Data-Science-Project\DataCleaning.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataCleaning.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,10 +172,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.MachineLearning" />
+        <item itemvalue="Python.DataCleaning (1)" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.MLUtility" />
         <item itemvalue="Python.DataClean" />
-        <item itemvalue="Python.DataCleaning" />
       </list>
     </recent_temporary>
   </component>
@@ -189,13 +187,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639675993090</updated>
-    </task>
-    <task id="LOCAL-00001" summary="bug fix">
-      <created>1640333819997</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1640333819997</updated>
     </task>
     <task id="LOCAL-00002" summary="fixed duplication bug.&#10;made code prettier.&#10;new parameter names.">
       <created>1640334730682</created>
@@ -533,11 +524,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641747496965</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="remade DataCleaning.py">
+      <created>1641898171788</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1641898171789</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SHAKING MY HEAD OR HOW CAN YOU NOT SEE TGHIS?!" />
     <MESSAGE value="fix indent" />
     <MESSAGE value="reFIX" />
     <MESSAGE value="final fix" />
@@ -562,6 +559,7 @@
     <MESSAGE value="ml page update" />
     <MESSAGE value="added DT" />
     <MESSAGE value="fixed small dt bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed small dt bug" />
+    <MESSAGE value="remade DataCleaning.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="remade DataCleaning.py" />
   </component>
 </project>

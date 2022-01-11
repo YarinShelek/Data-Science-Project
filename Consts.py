@@ -4,7 +4,7 @@ from pydantic import BaseModel
 
 class Consts():
     templates = Jinja2Templates(directory="templates")
-    replace_map = {"Iron": 0, "Bronze": 0, "Silver": 1, "Gold": 2, "Platinum": 3, "Diamond": 4, "Master": 5, "Grandmaster": 5, "Challenger": 5}
+    replace_map = {"Bronze": 0, "Silver": 1, "Gold": 2, "Platinum": 3, "Diamond": 4, "Apex": 5}
     replace_list = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Apex"]
 
     ml_replace_map = {"n": 0, "f1": 1, "acc": 2}

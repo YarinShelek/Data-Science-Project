@@ -4,113 +4,115 @@
 <div>
     <center style="color:#FFFFFF">
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Test Model vs Random Player
-        </button>
-        <div class="container-sm" style="position:absolute; top:10%; left:5%">
-            <center><h1>K Nearest Neighbors</h1></center>
-            <h2> best N: {{ Data[0]["KNN"][DataMap["n"]] }} </h2>
-            <h2> f1 score (std scaling): {{ Data[0]["KNN"][DataMap["f1"]] }} </h2>
-            <h2> f1 score (MM scaling): {{ Data[1]["KNN"][DataMap["f1"]] }} </h2>
-            <h2> accuracy score (std scaling): {{ Data[0]["KNN"][DataMap["acc"]] }} </h2>
-            <h2> accuracy score (MM scaling): {{ Data[1]["KNN"][DataMap["acc"]] }} </h2>
-        </div>
+        <h4 style="color:gold">In this project, we tried to predict a player's rank using given stats on him.<br>
+        The question is obviously a regression-type question, so we went ahead and tried regression-based algorithms for the prediction.<br>
+            The algorithms we tried, were: <span>K Nearest Neighbors</span>, <span>Support Vector Classifier</span>, <span>Decision Tree</span>, <span>Neural Network</span>, <span>Random Forest</span>, <span>Naive Bayes</span>, and <span>Linear Regression</span><br>
+        As you can see, our model works the best with Neural Network, so we chose it for the predictions.</h4>
 
-        <div class="container-sm" style="position:absolute; bottom:40%; left:5%">
-            <center><h1>Support Vector</h1></center>
-            <h2> f1 score (std scaling): {{ Data[0]["SVC"][DataMap["f1"]] }} </h2>
-            <h2> f1 score (MM scaling): {{ Data[1]["SVC"][DataMap["f1"]] }} </h2>
-            <h2> accuracy score (std scaling): {{ Data[0]["SVC"][DataMap["acc"]] }} </h2>
-            <h2> accuracy score (MM scaling): {{ Data[1]["SVC"][DataMap["acc"]] }} </h2>
-        </div>
-
-        <div class="container-sm" style="position:absolute; bottom:10%; left:5%">
-            <center><h1>Decision Tree</h1></center>
-            <h2> best Depth: {{ Data[0]["DT"][DataMap["n"]][0] }} </h2>
-            <h2> best Split: {{ Data[0]["DT"][DataMap["n"]][1] }} </h2>
-            <h2> f1 score (std scaling): {{ Data[0]["DT"][DataMap["f1"]] }} </h2>
-            <h2> f1 score (MM scaling): {{ Data[1]["DT"][DataMap["f1"]] }} </h2>
-            <h2> accuracy score (std scaling): {{ Data[0]["DT"][DataMap["acc"]] }} </h2>
-            <h2> accuracy score (MM scaling): {{ Data[1]["DT"][DataMap["acc"]] }} </h2>
-        </div>
-
-        <div class="container-sm" style="position:absolute; color:gold; bottom:50%; right:42%">
-            <center><h1>Neural Network</h1></center>
-            <h2> f1 score (std scaling): {{ Data[0]["NN"][DataMap["f1"]] }} </h2>
-            <h2> f1 score (MM scaling): {{ Data[1]["NN"][DataMap["f1"]] }} </h2>
-            <h2> accuracy score (std scaling): {{ Data[0]["NN"][DataMap["acc"]] }} </h2>
-            <h2> accuracy score (MM scaling): {{ Data[1]["NN"][DataMap["acc"]] }} </h2>
-        </div>
-
-        <div class="container-sm" style="position:absolute; top:10%; right:7%">
-            <center><h1>Random Forest</h1></center>
-            <h2> best N: {{ Data[0]["RF"][DataMap["n"]] }} </h2>
-            <h2> f1 score (std scaling): {{ Data[0]["RF"][DataMap["f1"]] }} </h2>
-            <h2> f1 score (MM scaling): {{ Data[1]["RF"][DataMap["f1"]] }} </h2>
-            <h2> accuracy score (std scaling): {{ Data[0]["RF"][DataMap["acc"]] }} </h2>
-            <h2> accuracy score (MM scaling): {{ Data[1]["RF"][DataMap["acc"]] }} </h2>
-        </div>
-
-        <div class="container-sm" style="position:absolute; bottom:40%; right:7%">
-            <center><h1>Bayes</h1></center>
-            <h2> f1 score (std scaling): {{ Data[0]["Bayes"][DataMap["f1"]] }} </h2>
-            <h2> f1 score (MM scaling): {{ Data[1]["Bayes"][DataMap["f1"]] }} </h2>
-            <h2> accuracy score (std scaling): {{ Data[0]["Bayes"][DataMap["acc"]] }} </h2>
-            <h2> accuracy score (MM scaling): {{ Data[1]["Bayes"][DataMap["acc"]] }} </h2>
-        </div>
-
-
-        <div class="container-sm" style="position:absolute; bottom:15%; right:7%">
-            <center><h1>Linear Regression</h1></center>
-            <h2> f1 score (std scaling): {{ Data[0]["LR"][DataMap["f1"]] }} </h2>
-            <h2> f1 score (MM scaling): {{ Data[1]["LR"][DataMap["f1"]] }} </h2>
-            <h2> accuracy score (std scaling): {{ Data[0]["LR"][DataMap["acc"]] }} </h2>
-            <h2> accuracy score (MM scaling): {{ Data[1]["LR"][DataMap["acc"]] }} </h2>
-        </div>
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <form action="/RankGuess" method="post">
-                            <div class="form-group">
-                                <label for="WinRate">Email address</label>
-                                <input type="text" class="form-control" name="WinRate" id="WinRate" aria-describedby="emailHelp" placeholder="Win Rate">
-
-                                <label for="Games">Games</label>
-                                <input type="text" class="form-control" name="Games" id="Games" placeholder="Games">
-
-                                <label for="Kills">Games</label>
-                                <input type="text" class="form-control" name="Kills" id="Kills" placeholder="Kills">
-
-                                <label for="Deaths">Games</label>
-                                <input type="text" class="form-control" name="Deaths" id="Deaths" placeholder="Deaths">
-
-                                <label for="Assists">Games</label>
-                                <input type="text" class="form-control" name="Assists" id="Assists" placeholder="Assists">
-
-                                <label for="CS">Games</label>
-                                <input type="text" class="form-control" name="CS" id="CS" placeholder="CS">
-
-                                <label for="Damage">Games</label>
-                                <input type="text" class="form-control" name="Damage" id="Damage" placeholder="Damage">
-
-                                <label for="Gold">Games</label>
-                                <input type="text" class="form-control" name="Gold" id="Gold" placeholder="Gold">
-
-                                <label for="Multi_Kills">Games</label>
-                                <input type="text" class="form-control" name="Multi_Kills" id="Multi_Kills" placeholder="Multi Kills">
-                            </div>
-                            <div class="form-group form-check">
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
-                            <button type="button" class="btn btn-secondary btn-lg btn-block" data-dismiss="modal">Close</button>
-                        </form>
-                    </div>
+        <div id="carousel" class="carousel slide" data-ride="carousel"  style="width:500px; height:500px; position:absolute; bottom:40%; right:40%">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                        <center><h1>K Nearest Neighbors</h1></center>
+                        <h2> best N: {{ Data[0]["KNN"][DataMap["n"]] }} </h2>
+                        <h2> f1 score (std scaling): {{ Data[0]["KNN"][DataMap["f1"]] }} </h2>
+                        <h2> f1 score (MM scaling): {{ Data[1]["KNN"][DataMap["f1"]] }} </h2>
+                        <h2> accuracy score (std scaling): {{ Data[0]["KNN"][DataMap["acc"]] }} </h2>
+                        <h2> accuracy score (MM scaling): {{ Data[1]["KNN"][DataMap["acc"]] }} </h2>
+                </div>
+                <div class="carousel-item">
+                        <center><h1>Support Vector</h1></center>
+                        <h2> f1 score (std scaling): {{ Data[0]["SVC"][DataMap["f1"]] }} </h2>
+                        <h2> f1 score (MM scaling): {{ Data[1]["SVC"][DataMap["f1"]] }} </h2>
+                        <h2> accuracy score (std scaling): {{ Data[0]["SVC"][DataMap["acc"]] }} </h2>
+                        <h2> accuracy score (MM scaling): {{ Data[1]["SVC"][DataMap["acc"]] }} </h2>
+                </div>
+                <div class="carousel-item">
+                        <center><h1>Decision Tree</h1></center>
+                        <h2> best Depth: {{ Data[0]["DT"][DataMap["n"]][0] }} </h2>
+                        <h2> best Split: {{ Data[0]["DT"][DataMap["n"]][1] }} </h2>
+                        <h2> f1 score (std scaling): {{ Data[0]["DT"][DataMap["f1"]] }} </h2>
+                        <h2> f1 score (MM scaling): {{ Data[1]["DT"][DataMap["f1"]] }} </h2>
+                        <h2> accuracy score (std scaling): {{ Data[0]["DT"][DataMap["acc"]] }} </h2>
+                        <h2> accuracy score (MM scaling): {{ Data[1]["DT"][DataMap["acc"]] }} </h2>
+                </div>
+                <div class="carousel-item" style="color:gold">
+                        <center><h1>Neural Network</h1></center>
+                        <h2> f1 score (std scaling): {{ Data[0]["NN"][DataMap["f1"]] }} </h2>
+                        <h2> f1 score (MM scaling): {{ Data[1]["NN"][DataMap["f1"]] }} </h2>
+                        <h2> accuracy score (std scaling): {{ Data[0]["NN"][DataMap["acc"]] }} </h2>
+                        <h2> accuracy score (MM scaling): {{ Data[1]["NN"][DataMap["acc"]] }} </h2>
+                </div>
+                <div class="carousel-item">
+                        <center><h1>Random Forest</h1></center>
+                        <h2> best N: {{ Data[0]["RF"][DataMap["n"]] }} </h2>
+                        <h2> f1 score (std scaling): {{ Data[0]["RF"][DataMap["f1"]] }} </h2>
+                        <h2> f1 score (MM scaling): {{ Data[1]["RF"][DataMap["f1"]] }} </h2>
+                        <h2> accuracy score (std scaling): {{ Data[0]["RF"][DataMap["acc"]] }} </h2>
+                        <h2> accuracy score (MM scaling): {{ Data[1]["RF"][DataMap["acc"]] }} </h2>
+                </div>
+                <div class="carousel-item">
+                        <center><h1>Bayes</h1></center>
+                        <h2> f1 score (std scaling): {{ Data[0]["Bayes"][DataMap["f1"]] }} </h2>
+                        <h2> f1 score (MM scaling): {{ Data[1]["Bayes"][DataMap["f1"]] }} </h2>
+                        <h2> accuracy score (std scaling): {{ Data[0]["Bayes"][DataMap["acc"]] }} </h2>
+                        <h2> accuracy score (MM scaling): {{ Data[1]["Bayes"][DataMap["acc"]] }} </h2>
+                </div>
+                <div class="carousel-item">
+                        <center><h1>Linear Regression</h1></center>
+                        <h2> f1 score (std scaling): {{ Data[0]["LR"][DataMap["f1"]] }} </h2>
+                        <h2> f1 score (MM scaling): {{ Data[1]["LR"][DataMap["f1"]] }} </h2>
+                        <h2> accuracy score (std scaling): {{ Data[0]["LR"][DataMap["acc"]] }} </h2>
+                        <h2> accuracy score (MM scaling): {{ Data[1]["LR"][DataMap["acc"]] }} </h2>
                 </div>
             </div>
         </div>
-    </center>
+        <button style="position:absolute; bottom:25%; right:45%" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Form">
+            Test Model vs Random Player
+        </button>
 
-</div>
-{% endblock %}
+                 <div class="modal fade" id="Form" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <form action="/RankGuess" method="post">
+                                    <div class="form-group">
+                                        <label for="WinRate">Email address</label>
+                                        <input type="text" class="form-control" name="WinRate" id="WinRate" aria-describedby="emailHelp" placeholder="Win Rate">
+
+                                        <label for="Games">Games</label>
+                                        <input type="text" class="form-control" name="Games" id="Games" placeholder="Games">
+
+                                        <label for="Kills">Games</label>
+                                        <input type="text" class="form-control" name="Kills" id="Kills" placeholder="Kills">
+
+                                        <label for="Deaths">Games</label>
+                                        <input type="text" class="form-control" name="Deaths" id="Deaths" placeholder="Deaths">
+
+                                        <label for="Assists">Games</label>
+                                        <input type="text" class="form-control" name="Assists" id="Assists" placeholder="Assists">
+
+                                        <label for="CS">Games</label>
+                                        <input type="text" class="form-control" name="CS" id="CS" placeholder="CS">
+
+                                        <label for="Damage">Games</label>
+                                        <input type="text" class="form-control" name="Damage" id="Damage" placeholder="Damage">
+
+                                        <label for="Gold">Games</label>
+                                        <input type="text" class="form-control" name="Gold" id="Gold" placeholder="Gold">
+
+                                        <label for="Multi_Kills">Games</label>
+                                        <input type="text" class="form-control" name="Multi_Kills" id="Multi_Kills" placeholder="Multi Kills">
+                                    </div>
+                                    <div class="form-group form-check">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block" data-dismiss="modal">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+
+        </div>
+        {% endblock %}

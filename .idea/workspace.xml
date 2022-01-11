@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="graphs" />
+    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/MachineLearning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/MachineLearning.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,13 +187,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639675993090</updated>
-    </task>
-    <task id="LOCAL-00005" summary="edited the page changing conditions&#10;added a print to show when we go to next page">
-      <created>1640429265621</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1640429265621</updated>
     </task>
     <task id="LOCAL-00006" summary="edited the page changing conditions&#10;added a print to show when we go to next page">
       <created>1640429377185</created>
@@ -526,11 +524,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641913748821</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="=??">
+      <created>1641920393908</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1641920393909</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changing to crawl tonight" />
     <MESSAGE value="fixed the merging bug" />
     <MESSAGE value="OR CHANGE TO PAGE = 3, URL = (URL)&amp;PAGE=3" />
     <MESSAGE value="wtf happened" />
@@ -555,6 +559,7 @@
     <MESSAGE value="remade CleanData.csv" />
     <MESSAGE value="pre-fix plottings" />
     <MESSAGE value="-prettify html &#10;-comments&#10;-add plots image routers" />
-    <option name="LAST_COMMIT_MESSAGE" value="-prettify html &#10;-comments&#10;-add plots image routers" />
+    <MESSAGE value="=??" />
+    <option name="LAST_COMMIT_MESSAGE" value="=??" />
   </component>
 </project>

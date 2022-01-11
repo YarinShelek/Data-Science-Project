@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Correlation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlotUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotUtility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routers/PagesRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/PagesRouters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routers/PlotRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/PlotRouters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/EDA.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/EDA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/EDA_Corr.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/EDA_Corr.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/EDA_Damage_Gold.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/EDA_Damage_Gold.html" afterDir="false" />
-    </list>
+    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639675993090</updated>
-    </task>
-    <task id="LOCAL-00007" summary="edited the page changing conditions&#10;added a print to show when we go to next page">
-      <created>1640430293174</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1640430293174</updated>
     </task>
     <task id="LOCAL-00008" summary="more bugfixes">
       <created>1640430800706</created>
@@ -535,11 +519,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641926276801</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="added corr">
+      <created>1641926987007</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1641926987007</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="OR CHANGE TO PAGE = 3, URL = (URL)&amp;PAGE=3" />
     <MESSAGE value="wtf happened" />
     <MESSAGE value="we are done with crawl.py!" />
     <MESSAGE value="the merge added so many unnoticed bugs..." />
@@ -564,6 +554,7 @@
     <MESSAGE value="-prettify html &#10;-comments&#10;-add plots image routers" />
     <MESSAGE value="=??" />
     <MESSAGE value="html changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="html changes" />
+    <MESSAGE value="added corr" />
+    <option name="LAST_COMMIT_MESSAGE" value="added corr" />
   </component>
 </project>

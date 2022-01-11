@@ -37,10 +37,15 @@ def plot_high_correlated_scatters(df):
     correlations, tuples = get_highly_correlated_cols(df)
     corr_len = len(correlations)
     fig, axes = plt.subplots(1, corr_len)
+    fig.tight_layout(pad = 3) #changed
     for c in range(corr_len):
         i, j = tuples[c]
         x = df.columns[i]
         y = df.columns[j]
         title = ("corr('%s','%s')=%4.2f") %(x, y, correlations[c])
-        df.plot(kind="scatter",x=x,y=y,ax=axes[c],title=title)
+        r = random.random()#changed
+        b = random.random()#changed
+        g = random.random()#changed
+        color = (r, g, b)#changed
+        df.plot(kind="scatter",x=x,y=y,ax=axes[c],title=title,color=color)#changed
     plt.show()

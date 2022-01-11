@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Correlation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/MachineLearning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/MachineLearning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotUtility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routers/PagesRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/PagesRouters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routers/PlotRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/PlotRouters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/EDA.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/EDA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/EDA_Corr.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/EDA_Corr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/EDA_Damage_Gold.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/EDA_Damage_Gold.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +67,28 @@
       <recent name="D:\uni stuff\Data-Science-Project\Routers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.Correlation">
+    <configuration name="Correlation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data-Science-Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Correlation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="DataCleaning (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data-Science-Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,27 +102,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataCleaning.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MLUtility" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Data-Science-Project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MLUtility.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Correlation" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.Plotting" />
         <item itemvalue="Python.DataCleaning (1)" />
         <item itemvalue="Python.MachineLearning" />
-        <item itemvalue="Python.MLUtility" />
       </list>
     </recent_temporary>
   </component>
@@ -187,13 +191,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639675993090</updated>
-    </task>
-    <task id="LOCAL-00006" summary="edited the page changing conditions&#10;added a print to show when we go to next page">
-      <created>1640429377185</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1640429377185</updated>
     </task>
     <task id="LOCAL-00007" summary="edited the page changing conditions&#10;added a print to show when we go to next page">
       <created>1640430293174</created>
@@ -531,11 +528,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641920393909</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="html changes">
+      <created>1641926276801</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1641926276801</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed the merging bug" />
     <MESSAGE value="OR CHANGE TO PAGE = 3, URL = (URL)&amp;PAGE=3" />
     <MESSAGE value="wtf happened" />
     <MESSAGE value="we are done with crawl.py!" />
@@ -560,6 +563,7 @@
     <MESSAGE value="pre-fix plottings" />
     <MESSAGE value="-prettify html &#10;-comments&#10;-add plots image routers" />
     <MESSAGE value="=??" />
-    <option name="LAST_COMMIT_MESSAGE" value="=??" />
+    <MESSAGE value="html changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="html changes" />
   </component>
 </project>

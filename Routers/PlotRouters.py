@@ -65,3 +65,8 @@ def Plot():
 def Plot():
     return FileResponse("Plots/Bronze_Damage_Gold_Mean.png")
 ##BRONZE
+
+##corr
+@router.get("/pearson_corr")
+def Plot():
+    return FileResponse("Plots/pearson_corr.png")

@@ -66,3 +66,5 @@ plt.title("Apex")
 plt.ylabel("Stats")
 plt.show()
 ##APEX PLOT
+
+util.plot_high_correlated_scatters(util.read_csv().drop(columns="Rank"))

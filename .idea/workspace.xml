@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Plotting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CleanData.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataCleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataCleaning.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +62,7 @@
       <recent name="D:\uni stuff\Data-Science-Project\Routers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MachineLearning">
+  <component name="RunManager" selected="Python.DataCleaning (1)">
     <configuration name="DataClean" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data-Science-Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,8 +170,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MachineLearning" />
         <item itemvalue="Python.DataCleaning (1)" />
+        <item itemvalue="Python.MachineLearning" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.MLUtility" />
         <item itemvalue="Python.DataClean" />
@@ -187,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639675993090</updated>
-    </task>
-    <task id="LOCAL-00002" summary="fixed duplication bug.&#10;made code prettier.&#10;new parameter names.">
-      <created>1640334730682</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1640334730682</updated>
     </task>
     <task id="LOCAL-00003" summary="fixed duplication bug.&#10;made code prettier.&#10;new parameter names.">
       <created>1640428832339</created>
@@ -531,11 +523,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641898171789</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="remade CleanData.csv">
+      <created>1641898524550</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1641898524550</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix indent" />
     <MESSAGE value="reFIX" />
     <MESSAGE value="final fix" />
     <MESSAGE value="changing to crawl tonight" />
@@ -560,6 +558,7 @@
     <MESSAGE value="added DT" />
     <MESSAGE value="fixed small dt bug" />
     <MESSAGE value="remade DataCleaning.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="remade DataCleaning.py" />
+    <MESSAGE value="remade CleanData.csv" />
+    <option name="LAST_COMMIT_MESSAGE" value="remade CleanData.csv" />
   </component>
 </project>

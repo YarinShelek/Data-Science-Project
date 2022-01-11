@@ -13,4 +13,4 @@ df.drop(df[df.WinRate <= 30].index, inplace=True)
 df.drop(df[df.Games >= 1500].index, inplace=True)
 print("After Cleaning Size:", df.shape)
 with open("CleanData.csv", "w") as file2:
-    df.to_csv(file2, index=False)
+   df.to_csv(file2, index=False)

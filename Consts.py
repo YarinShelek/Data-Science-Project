@@ -7,7 +7,7 @@ class Consts():
     replace_map = {"Iron": 0, "Bronze": 0, "Silver": 1, "Gold": 2, "Platinum": 3, "Diamond": 4, "Master": 5, "Grandmaster": 5, "Challenger": 5}
     replace_list = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Apex"]
 
-    ml_replace_map = {"n": 0, "f1": 1, "accuracy": 2}
+    ml_replace_map = {"n": 0, "f1": 1, "acc": 2}
     ##file_names
     Clean_Data_File = "CleanDataNoKDA.csv"
     All_Data_File = "AllDataNoKDA.csv"

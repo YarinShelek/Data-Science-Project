@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
+    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="fixed small dt bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLUtility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MachineLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/MachineLearning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/MachineLearning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/MachineLearning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AllDataNoKDA.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanDataNoKDA.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CleanDataNoKDA.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Plot_After_Cleaning.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Plot_After_Cleaning.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/DataCleaning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/DataCleaning.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,7 @@
       <recent name="D:\uni stuff\Data-Science-Project\Routers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.MachineLearning">
     <configuration name="DataClean" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data-Science-Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,8 +173,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Main" />
         <item itemvalue="Python.MachineLearning" />
+        <item itemvalue="Python.Main" />
         <item itemvalue="Python.MLUtility" />
         <item itemvalue="Python.DataClean" />
         <item itemvalue="Python.DataCleaning" />

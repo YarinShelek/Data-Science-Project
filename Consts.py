@@ -9,8 +9,8 @@ class Consts():
 
     ml_replace_map = {"n": 0, "f1": 1, "acc": 2}
     ##file_names
-    Clean_Data_File = "CleanDataNoKDA.csv"
-    All_Data_File = "AllDataNoKDA.csv"
+    Clean_Data_File = "CleanData.csv"
+    All_Data_File = "AllData.csv"
 class Player(BaseModel):
     WinRate: float
     Games: float
@@ -25,6 +25,7 @@ class Player(BaseModel):
     @classmethod
     def read_form(cls, WinRate: float = Form(...), Games: float = Form(...), Kills: float = Form(...), Deaths: float = Form(...), Assists: float = Form(...), CS: float = Form(...), Damage: float = Form(...), Gold: float = Form(...), Multi_Kills: float = Form(...)):
         return cls(WinRate=WinRate, Games=Games, Kills=Kills, Deaths=Deaths, Assists=Assists, CS=CS, Damage=Damage, Gold=Gold, Multi_Kills=Multi_Kills)
+
     def to_list(self):
         res = []
         res.append(self.WinRate)

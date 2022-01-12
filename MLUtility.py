@@ -1,5 +1,4 @@
 import pandas as pd
-from sklearn import linear_model
 from sklearn import metrics
 from sklearn.metrics import make_scorer
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
@@ -11,7 +10,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 from sklearn.neural_network import MLPClassifier
 import numpy as np
-
+import matplotlib.pyplot as plt
 from Consts import Consts
 
 
@@ -38,8 +37,6 @@ def get_model(type, ml_df, rank_df, n=0):
         return RandomForestClassifier(n_estimators=n).fit(ml_df, rank_df)
     if type == "KNN":
         return KNeighborsClassifier(n_neighbors=n).fit(ml_df, rank_df)
-    if type == "LR":
-        return linear_model.LogisticRegression().fit(ml_df, rank_df)
     if type == "DT":
         return DecisionTreeClassifier(max_depth=n[0], min_samples_split=n[1]).fit(ml_df, rank_df)
     if type == "Bayes":
@@ -49,15 +46,15 @@ def get_model(type, ml_df, rank_df, n=0):
 
 def calc_evaluation_val(eval_metric, y_test, y_predicted):
     if eval_metric == 'accuracy':
-        evaluation_val = metrics.accuracy_score(y_true = y_test, y_pred = y_predicted)
+        evaluation_val = metrics.accuracy_score(y_true=y_test, y_pred=y_predicted)
     if eval_metric == 'precision':
-        evaluation_val = metrics.precision_score(y_true = y_test, y_pred = y_predicted, average="weighted")
+        evaluation_val = metrics.precision_score(y_true=y_test, y_pred=y_predicted, average="weighted")
     if eval_metric == 'recall':
-        evaluation_val = metrics.recall_score(y_true = y_test, y_pred = y_predicted, average="weighted")
-    if eval_metric == 'f1' :
-        evaluation_val = metrics.f1_score(y_true = y_test, y_pred = y_predicted, average="weighted")
+        evaluation_val = metrics.recall_score(y_true=y_test, y_pred=y_predicted, average="weighted")
+    if eval_metric == 'f1':
+        evaluation_val = metrics.f1_score(y_true=y_test, y_pred=y_predicted, average="weighted")
     if eval_metric == 'confusion_matrix':
-        evaluation_val = metrics.confusion_matrix(y_true = y_test, y_pred = y_predicted)
+        evaluation_val = metrics.confusion_matrix(y_true=y_test, y_pred=y_predicted)
     return evaluation_val
 
 def find_best_estimators(type,X_train, y_train):
@@ -94,4 +91,11 @@ def predict_player_rank(player_df):
     model = get_model("NN", X_train, y_train)
     scaled_player = scale_palyer_data(scaler, player_df)
     result = model.predict(scaled_player)[0]
-    return Consts.replace_list[result]
+    probab = model.predict_proba(scaled_player)[0]
+    labels = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Apex"]
+    plt.figure()
+    wedges, texts = plt.pie(probab, labels=labels, colors=Consts.Color_List, textprops={"color": "Gold"}) #https://stackoverflow.com/questions/54564641/different-colors-for-each-label-in-my-pie-chart
+    for text, color in zip(texts, Consts.Color_List):
+        text.set_color(color)
+    plt.savefig("Plots/PiePlot.png", transparent=True)
+    return Consts.replace_list[result], Consts.Color_List[result]

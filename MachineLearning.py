@@ -5,8 +5,8 @@ def ml(standalone=True):
     #start preparing data
     ml_df, rank_df = util.read_csv()
     if standalone == False:
-        STD = {"KNN": [], "LR": [], "RF": [], "SVC": []}
-        MM = {"KNN": [], "LR": [], "RF": [], "SVC": []}
+        STD = {}
+        MM = {}
     rank_df = util.factorize(rank_df)
     scaled_df, scaler = util.std_scale_df(ml_df)
     mm_scaled_df, mm_scaler = util.MM_scale_df(ml_df)
@@ -25,7 +25,6 @@ def ml(standalone=True):
         # end preparing data
 
         ##GET MODELS
-        LR_Model = util.get_model("LR", X_train, y_train)
         KNN_Model = util.get_model("KNN", X_train, y_train, KNN_n)
         RF_Model = util.get_model("RF", X_train, y_train, RF_n)
         SVC_Model = util.get_model("SVC", X_train, y_train)
@@ -35,7 +34,6 @@ def ml(standalone=True):
         ##END GET MODELS
 
         ##GET PREDICTIONS
-        LR_prediction = LR_Model.predict(X_test)
         KNN_prediction = KNN_Model.predict(X_test)
         RF_prediction = RF_Model.predict(X_test)
         SVC_prediction = SVC_Model.predict(X_test)
@@ -44,7 +42,6 @@ def ml(standalone=True):
         Bayes_prediction = Bayes_Model.predict(X_test)
         ##END GET PREDICTIONS
 
-        LR_prediction_f1 = round(util.calc_evaluation_val("f1", y_test, LR_prediction), 3)
         KNN_prediction_f1 = round(util.calc_evaluation_val("f1", y_test, KNN_prediction), 3)
         RF_prediction_f1 = round(util.calc_evaluation_val("f1", y_test, RF_prediction), 3)
         SVC_prediction_f1 = round(util.calc_evaluation_val("f1", y_test, SVC_prediction), 3)
@@ -52,7 +49,6 @@ def ml(standalone=True):
         NN_prediction_f1 = round(util.calc_evaluation_val("f1", y_test, NN_prediction), 3)
         Bayes_prediction_f1 = round(util.calc_evaluation_val("f1", y_test, Bayes_prediction), 3)
 
-        LR_prediction_accuracy = round(util.calc_evaluation_val("accuracy", y_test, LR_prediction), 3)
         KNN_prediction_accuracy = round(util.calc_evaluation_val("accuracy", y_test, KNN_prediction), 3)
         RF_prediction_accuracy = round(util.calc_evaluation_val("accuracy", y_test, RF_prediction), 3)
         SVC_prediction_accuracy = round(util.calc_evaluation_val("accuracy", y_test, SVC_prediction), 3)
@@ -60,8 +56,7 @@ def ml(standalone=True):
         NN_prediction_accuracy = round(util.calc_evaluation_val("accuracy", y_test, NN_prediction), 3)
         Bayes_prediction_accuracy = round(util.calc_evaluation_val("accuracy", y_test, Bayes_prediction), 3)
 
-        df = [{"LR": [f"f1: {LR_prediction_f1}", f"accuracy: {LR_prediction_accuracy}"],
-               "SVC":[f"f1: {SVC_prediction_f1}", f"accuracy: {SVC_prediction_accuracy}"],
+        df = [{"SVC":[f"f1: {SVC_prediction_f1}", f"accuracy: {SVC_prediction_accuracy}"],
                "RF":[f"f1: {RF_prediction_f1}", f"accuracy: {RF_prediction_accuracy}"],
                "KNN":[f"f1: {KNN_prediction_f1}", f"accuracy: {KNN_prediction_accuracy}"],
               "DT": [f"f1: {DT_prediction_f1}", f"accuracy: {DT_prediction_accuracy}"],
@@ -77,7 +72,6 @@ def ml(standalone=True):
             if index == 0:
                 STD["KNN"] = [KNN_n, KNN_prediction_f1, KNN_prediction_accuracy]
                 STD["RF"] = [RF_n, RF_prediction_f1, RF_prediction_accuracy]
-                STD["LR"] = [0, LR_prediction_f1, LR_prediction_accuracy]
                 STD["SVC"] = [0, SVC_prediction_f1, SVC_prediction_accuracy]
                 STD["DT"] = [DT_n, DT_prediction_f1, DT_prediction_accuracy]
                 STD["NN"] = [0, NN_prediction_f1, NN_prediction_accuracy]
@@ -85,7 +79,6 @@ def ml(standalone=True):
             else:
                 MM["KNN"] = [KNN_n, KNN_prediction_f1, KNN_prediction_accuracy]
                 MM["RF"] = [RF_n, RF_prediction_f1, RF_prediction_accuracy]
-                MM["LR"] = [0, LR_prediction_f1, LR_prediction_accuracy]
                 MM["SVC"] = [0, SVC_prediction_f1, SVC_prediction_accuracy]
                 MM["DT"] = [DT_n, DT_prediction_f1, DT_prediction_accuracy]
                 MM["NN"] = [0, NN_prediction_f1, NN_prediction_accuracy]

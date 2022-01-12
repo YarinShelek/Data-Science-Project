@@ -36,16 +36,16 @@ plt.show()
 ##SILVER PLOT
 
 ##GOLD PLOT
-#plt.bar(x=DataFrames["Gold"]["Plot_DF"]["Data"], height=DataFrames["Gold"]["Plot_DF"]["Means"], color=DataFrames["Gold"]["Color_List"]) #MEANS
-plt.bar(x=DataFrames_Damage_Gold["Gold"]["Plot_DF"]["Data"], height=DataFrames_Damage_Gold["Gold"]["Plot_DF"]["Means"], color=DataFrames_Damage_Gold["Gold"]["Color_List"]) #DAMAGE GOLD
+plt.bar(x=DataFrames["Gold"]["Plot_DF"]["Data"], height=DataFrames["Gold"]["Plot_DF"]["Means"], color=DataFrames["Gold"]["Color_List"]) #MEANS
+#plt.bar(x=DataFrames_Damage_Gold["Gold"]["Plot_DF"]["Data"], height=DataFrames_Damage_Gold["Gold"]["Plot_DF"]["Means"], color=DataFrames_Damage_Gold["Gold"]["Color_List"]) #DAMAGE GOLD
 plt.title("Gold")
 plt.ylabel("Stats")
 plt.show()
 ##GOLD PLOT
 
 #PLATINUM PLOT
-#plt.bar(x=DataFrames["Platinum"]["Plot_DF"]["Data"], height=DataFrames["Platinum"]["Plot_DF"]["Means"], color=DataFrames["Platinum"]["Color_List"]) #MEANS
-plt.bar(x=DataFrames_Damage_Gold["Platinum"]["Plot_DF"]["Data"], height=DataFrames_Damage_Gold["Platinum"]["Plot_DF"]["Means"], color=DataFrames_Damage_Gold["Platinum"]["Color_List"]) #DAMAGE GOLD
+plt.bar(x=DataFrames["Platinum"]["Plot_DF"]["Data"], height=DataFrames["Platinum"]["Plot_DF"]["Means"], color=DataFrames["Platinum"]["Color_List"]) #MEANS
+#plt.bar(x=DataFrames_Damage_Gold["Platinum"]["Plot_DF"]["Data"], height=DataFrames_Damage_Gold["Platinum"]["Plot_DF"]["Means"], color=DataFrames_Damage_Gold["Platinum"]["Color_List"]) #DAMAGE GOLD
 plt.title("Platinum")
 plt.ylabel("Stats")
 plt.show()

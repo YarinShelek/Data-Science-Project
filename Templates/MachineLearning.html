@@ -6,7 +6,7 @@
 
         <h4 style="color:gold">In this project, we tried to predict a player's rank using given stats on him.<br>
         The question is obviously a regression-type question, so we went ahead and tried regression-based algorithms for the prediction.<br>
-            The algorithms we tried, were: <span>K Nearest Neighbors</span>, <span>Support Vector Classifier</span>, <span>Decision Tree</span>, <span>Neural Network</span>, <span>Random Forest</span>, <span>Naive Bayes</span>, and <span>Linear Regression</span><br>
+            The algorithms we tried, were: <span>K Nearest Neighbors</span>, <span>Support Vector Classifier</span>, <span>Decision Tree</span>, <span>Neural Network</span>, <span>Random Forest</span>, <span>Naive Bayes</span><br>
         As you can see, our model works the best with Neural Network, so we chose it for the predictions.</h4>
 
         <div id="carousel" class="carousel slide" data-ride="carousel"  style="width:500px; height:500px; position:absolute; bottom:40%; right:40%">
@@ -56,13 +56,6 @@
                         <h2> f1 score (MM scaling): {{ Data[1]["Bayes"][DataMap["f1"]] }} </h2>
                         <h2> accuracy score (std scaling): {{ Data[0]["Bayes"][DataMap["acc"]] }} </h2>
                         <h2> accuracy score (MM scaling): {{ Data[1]["Bayes"][DataMap["acc"]] }} </h2>
-                </div>
-                <div class="carousel-item">
-                        <center><h1>Linear Regression</h1></center>
-                        <h2> f1 score (std scaling): {{ Data[0]["LR"][DataMap["f1"]] }} </h2>
-                        <h2> f1 score (MM scaling): {{ Data[1]["LR"][DataMap["f1"]] }} </h2>
-                        <h2> accuracy score (std scaling): {{ Data[0]["LR"][DataMap["acc"]] }} </h2>
-                        <h2> accuracy score (MM scaling): {{ Data[1]["LR"][DataMap["acc"]] }} </h2>
                 </div>
             </div>
         </div>

@@ -66,6 +66,12 @@ def Plot():
     return FileResponse("Plots/Bronze_Damage_Gold_Mean.png")
 ##BRONZE
 
+##RANK GUESS
+@router.get("/PiePlot")
+def Plot():
+    return FileResponse("Plots/PiePlot.png")
+##RANK GUESS
+
 ##corr
 @router.get("/pearson_corr")
 def Plot():

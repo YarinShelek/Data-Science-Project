@@ -34,4 +34,5 @@ def MachineLearning(request: Request):
     return Consts.templates.TemplateResponse("MachineLearning.html", {"request": request, "Title": "MachineLearning Page", "Data": ml(False), "DataMap": Consts.ml_replace_map})
 @router.post("/RankGuess", response_class=HTMLResponse)
 def RankGuess(request: Request, FormData: Player = Depends(Player.read_form)):
-    return Consts.templates.TemplateResponse("RankGuess.html", {"request": request, "Title": "RankGuess Page", "Rank": util.predict_player_rank(FormData.to_list())})
+    rank, color = util.predict_player_rank(FormData.to_list())
+    return Consts.templates.TemplateResponse("RankGuess.html", {"request": request, "Title": "RankGuess Page", "Rank": rank, "Color": color})

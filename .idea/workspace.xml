@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="or color changes">
+    <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CleanData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CleanData.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Correlation.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataCleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataCleaning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLUtility.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MachineLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/MachineLearning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlotUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotUtility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plots/Gold_Damage_Gold_Mean.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Gold_Damage_Gold_Mean.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plots/Gold_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Gold_Mean_Plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plots/Platinum_Damage_Gold_Mean.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Platinum_Damage_Gold_Mean.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plots/Platinum_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Platinum_Mean_Plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plots/pearson_corr.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/pearson_corr.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routers/PagesRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/PagesRouters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routers/PlotRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/PlotRouters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/MachineLearning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/MachineLearning.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/RankGuess.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/RankGuess.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +64,7 @@
       <recent name="D:\uni stuff\Data-Science-Project\Routers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.MachineLearning">
     <configuration name="Correlation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data-Science-Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -186,10 +172,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Main" />
         <item itemvalue="Python.MachineLearning" />
-        <item itemvalue="Python.Plotting" />
         <item itemvalue="Python.DataCleaning (1)" />
+        <item itemvalue="Python.Main" />
+        <item itemvalue="Python.Plotting" />
         <item itemvalue="Python.Correlation" />
       </list>
     </recent_temporary>
@@ -202,13 +188,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639675993090</updated>
-    </task>
-    <task id="LOCAL-00009" summary="more bugfixes">
-      <created>1640431649600</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1640431649600</updated>
     </task>
     <task id="LOCAL-00010" summary="added data counter">
       <created>1640454911830</created>
@@ -546,11 +525,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641929134291</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="DESIGN FINISHED&#10;kinda">
+      <created>1641985109262</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1641985109263</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="we are done with crawl.py!" />
     <MESSAGE value="the merge added so many unnoticed bugs..." />
     <MESSAGE value="season 11 can be selected now" />
     <MESSAGE value="new csv to crawl into tonight" />
@@ -575,6 +560,18 @@
     <MESSAGE value="html changes" />
     <MESSAGE value="added corr" />
     <MESSAGE value="or color changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="or color changes" />
+    <MESSAGE value="DESIGN FINISHED&#10;kinda" />
+    <option name="LAST_COMMIT_MESSAGE" value="DESIGN FINISHED&#10;kinda" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/Programs/Python/Python310/Lib/site-packages/pandas/core/frame.py</url>
+          <line>4276</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

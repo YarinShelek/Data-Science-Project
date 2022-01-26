@@ -35,5 +35,9 @@ def SilverLogo():
 @router.get("/BronzeLogo")
 def BronzeLogo():
     return FileResponse("Images/BronzeLogo.png")
-
-
+@router.get("/Presentation")
+def Presentation():
+    return FileResponse("Presentation.pptx")
+@router.get("/LolIcon")
+def LolIcon():
+    return FileResponse("Images/LolIcon.png")

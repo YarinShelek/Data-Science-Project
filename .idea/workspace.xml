@@ -6,9 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="1bc41c45-cb79-47bd-b8b5-a9c3436f574a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CleanData.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataCleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataCleaning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MachineLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/MachineLearning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Apex_Damage_Gold_Mean.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Apex_Damage_Gold_Mean.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Apex_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Apex_Mean_Plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Bronze_Damage_Gold_Mean.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Bronze_Damage_Gold_Mean.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Bronze_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Bronze_Mean_Plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Diamond_Damage_Gold_Mean.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Diamond_Damage_Gold_Mean.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Diamond_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Diamond_Mean_Plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Gold_Damage_Gold_Mean.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Gold_Damage_Gold_Mean.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Gold_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Gold_Mean_Plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Platinum_Damage_Gold_Mean.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Platinum_Damage_Gold_Mean.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Platinum_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Platinum_Mean_Plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Silver_Damage_Gold_Mean.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Silver_Damage_Gold_Mean.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Silver_Mean_Plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Silver_Mean_Plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routers/MiscRouters.py" beforeDir="false" afterPath="$PROJECT_DIR$/Routers/MiscRouters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/DataCleaning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/DataCleaning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/DataSource.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/DataSource.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/MachineLearning.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/MachineLearning.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +81,7 @@
       <recent name="D:\uni stuff\Data-Science-Project\Routers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MachineLearning">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="Correlation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data-Science-Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,9 +189,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Main" />
         <item itemvalue="Python.MachineLearning" />
         <item itemvalue="Python.DataCleaning (1)" />
-        <item itemvalue="Python.Main" />
         <item itemvalue="Python.Plotting" />
         <item itemvalue="Python.Correlation" />
       </list>
@@ -188,13 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639675993090</updated>
-    </task>
-    <task id="LOCAL-00010" summary="added data counter">
-      <created>1640454911830</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1640454911830</updated>
     </task>
     <task id="LOCAL-00011" summary="bugfix">
       <created>1640455978725</created>
@@ -532,11 +542,17 @@
       <option name="project" value="LOCAL" />
       <updated>1641985109263</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="lEts aDD isSooPurt">
+      <created>1642169568497</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1642169568497</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="the merge added so many unnoticed bugs..." />
     <MESSAGE value="season 11 can be selected now" />
     <MESSAGE value="new csv to crawl into tonight" />
     <MESSAGE value="increased jump amount" />
@@ -561,7 +577,8 @@
     <MESSAGE value="added corr" />
     <MESSAGE value="or color changes" />
     <MESSAGE value="DESIGN FINISHED&#10;kinda" />
-    <option name="LAST_COMMIT_MESSAGE" value="DESIGN FINISHED&#10;kinda" />
+    <MESSAGE value="lEts aDD isSooPurt" />
+    <option name="LAST_COMMIT_MESSAGE" value="lEts aDD isSooPurt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -8,6 +8,7 @@ class Consts():
     replace_list = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Apex"]
     Color_List = ["#CD7F32", "#C0C0C0", "#d4af37", "#E5E4E2", "#A0e1f5", "#860111"]
     ml_replace_map = {"n": 0, "f1": 1, "acc": 2}
+    time_per_game = {"Bronze": "29:43", "Silver": "29:26","Gold": "28:27","Platinum": "28:09", "Diamond": "26:57", "Apex": "26:00"} #https://dotesports.com/league-of-legends/news/how-long-is-an-average-league-of-legends-match
     ##file_names
     Clean_Data_File = "CleanData.csv"
     All_Data_File = "AllData.csv"

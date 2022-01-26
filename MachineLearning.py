@@ -14,17 +14,13 @@ def ml(standalone=True):
     for index, dataframe in enumerate(scaled_dfs):
         X_train, X_test, y_train, y_test = train_test_split(scaled_df, rank_df, test_size=0.2, random_state=42)
         if standalone == True:
-            #KNN_n= util.find_best_estimators("KNN", X_train, y_train)
-            #RF_n = util.find_best_estimators("RF", X_train, y_train)
-            #DT_n = util.find_best_estimators("DT", X_train, y_train)
-            KNN_n  = 18
-            DT_n = [9,19]
-            RF_n  = 19
-            print(f"knn: {KNN_n}, RF: {RF_n}, DT: {DT_n}")
+            KNN_n= util.find_best_estimators("KNN", X_train, y_train)
+            RF_n = util.find_best_estimators("RF", X_train, y_train)
+            DT_n = util.find_best_estimators("DT", X_train, y_train)
         if standalone == False: #manually input previously known best n's
-            KNN_n  = 18
-            DT_n = [9,19]
-            RF_n  = 19
+            KNN_n  = 19
+            DT_n = [8,13]
+            RF_n  = 15
         # end preparing data
 
         ##GET MODELS
